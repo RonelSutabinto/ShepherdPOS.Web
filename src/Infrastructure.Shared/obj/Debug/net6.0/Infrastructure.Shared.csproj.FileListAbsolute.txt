@@ -1,0 +1,60 @@
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.deps.json
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Application.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Domain.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Application.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Domain.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/sv/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/km/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/it/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/ru/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/ar/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/nl/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/de/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/id/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/fr/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/es/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/bin/Debug/net6.0/en/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.CopyComplete
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/refint/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Infrastructure.Shared/obj/Debug/net6.0/ref/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Application.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Domain.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Application.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Domain.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/sv/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/km/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/it/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/ru/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/ar/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/nl/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/de/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/id/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/fr/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/es/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/bin/Debug/net6.0/en/BlazorHero.CleanArchitecture.Application.resources.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/Infrastructure.Shared.csproj.CopyComplete
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/refint/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Infrastructure.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Infrastructure.Shared/obj/Debug/net6.0/ref/BlazorHero.CleanArchitecture.Infrastructure.Shared.dll

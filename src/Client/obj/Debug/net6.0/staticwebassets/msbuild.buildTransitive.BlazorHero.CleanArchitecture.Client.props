@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BlazorHero.CleanArchitecture.Client.props" />
+</Project>

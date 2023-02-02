@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>BlazorHero.CleanArchitecture.Domain</RootNamespace>
+    <AssemblyName>BlazorHero.CleanArchitecture.Domain</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Entities\Catalog\" />
+    <None Remove="Entities\ExtendedAttributes\" />
+    <None Remove="Entities\Misc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Entities\Catalog\" />
+    <Folder Include="Entities\ExtendedAttributes\" />
+    <Folder Include="Entities\Misc\" />
+  </ItemGroup>
+</Project>

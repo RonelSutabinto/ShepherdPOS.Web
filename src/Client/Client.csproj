@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
+    <RootNamespace>BlazorHero.CleanArchitecture.Client</RootNamespace>
+    <AssemblyName>BlazorHero.CleanArchitecture.Client</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'BlazorHero.CleanArchitecture' ">
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Blazored.FluentValidation" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    <PackageReference Include="MudBlazor" Version="6.0.2" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Extensions\" />
+    <None Remove="Pages\Content\" />
+    <None Remove="Pages\Misc\ExtendedAttribute\" />
+    <None Remove="Resources\Pages\Account\" />
+    <None Remove="Resources\Pages\Catalog\" />
+    <None Remove="Resources\Pages\Communication\" />
+    <None Remove="Resources\Pages\Identity\" />
+    <None Remove="Resources\Pages\Misc\" />
+    <None Remove="Resources\Pages\Utilities\" />
+    <None Remove="Resources\Shared\Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Client.Infrastructure\Client.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Pages\Content\" />
+    <Folder Include="Pages\Misc\ExtendedAttribute\" />
+    <Folder Include="Resources\Pages\Account\" />
+    <Folder Include="Resources\Pages\Catalog\" />
+    <Folder Include="Resources\Pages\Communication\" />
+    <Folder Include="Resources\Pages\Identity\" />
+    <Folder Include="Resources\Pages\Misc\" />
+    <Folder Include="Resources\Pages\Utilities\" />
+    <Folder Include="Resources\Shared\Components\" />
+  </ItemGroup>
+</Project>

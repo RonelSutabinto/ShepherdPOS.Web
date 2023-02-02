@@ -1,0 +1,32 @@
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.deps.json
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/Shared.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/Shared.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/refint/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Shared/obj/Debug/net6.0/ref/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/bin/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/Shared.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/Shared.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/refint/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS/src/Shared/obj/Debug/net6.0/ref/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/Shared.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/Shared.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/Shared.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/refint/BlazorHero.CleanArchitecture.Shared.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/src/Shared/obj/Debug/net6.0/BlazorHero.CleanArchitecture.Shared.pdb
