@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/Client.csproj": {}
+    "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/Client.csproj": {}
   },
   "projects": {
-    "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/Client.csproj": {
+    "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/Client.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/Client.csproj",
         "projectName": "Client",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/Client.csproj",
+        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/Client.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/obj/",
+        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"

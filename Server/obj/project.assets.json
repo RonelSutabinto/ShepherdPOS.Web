@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Server/Server.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Server/Server.csproj",
       "projectName": "Server",
-      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Server/Server.csproj",
+      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Server/Server.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Server/obj/",
+      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"

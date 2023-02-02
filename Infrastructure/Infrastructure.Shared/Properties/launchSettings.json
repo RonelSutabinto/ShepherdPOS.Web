@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Infrastructure.Shared": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

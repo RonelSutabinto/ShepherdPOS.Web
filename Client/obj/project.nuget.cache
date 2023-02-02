@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LYNQ3sEHyzmqs96XbY0vK0MyAZFLmu9YZrXxreq7XMFUwsDxuM1eywlx6r329Y97ufC1YS5PkeC9V3IppmtPiw==",
+  "dgSpecHash": "Q25UEk9G40m5iGEZjULRD5L1/MP+Q4/h7G4hOBJFxooRjGdWhKLpUOQYT+hS9kvKFn15F/J213l/ZjiY2d8QOw==",
   "success": true,
-  "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/ShepherdPOS.Web/Client/Client.csproj",
+  "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/blazor/StartUp/ShepherdPOS.Web/Client/Client.csproj",
   "expectedPackageFiles": [
     "/Users/ronelsutabinto/.nuget/packages/microsoft.aspnetcore.authorization/6.0.13/microsoft.aspnetcore.authorization.6.0.13.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.aspnetcore.components/6.0.13/microsoft.aspnetcore.components.6.0.13.nupkg.sha512",
