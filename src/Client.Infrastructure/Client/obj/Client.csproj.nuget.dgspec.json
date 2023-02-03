@@ -42,10 +42,16 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+<<<<<<< HEAD:src/Client.Infrastructure/Client/obj/Client.csproj.nuget.dgspec.json
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.13, )"
+=======
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+>>>>>>> parent of 81c529e (Add dbContext to seed sample data to SQL database):ShepherdPOS.API/obj/ShepherdPOS.API.csproj.nuget.dgspec.json
             }
           },
           "imports": [
