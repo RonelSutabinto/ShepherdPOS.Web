@@ -24,6 +24,9 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/Users/ronelsutabinto/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+<<<<<<< HEAD:src/Infrastructure/obj/Infrastructure.csproj.nuget.g.props
+>>>>>>> parent of 81c529e (Add dbContext to seed sample data to SQL database):ShepherdPOS.API/obj/ShepherdPOS.API.csproj.nuget.g.props
+=======
 >>>>>>> parent of 81c529e (Add dbContext to seed sample data to SQL database):ShepherdPOS.API/obj/ShepherdPOS.API.csproj.nuget.g.props
   </PropertyGroup>
 </Project>

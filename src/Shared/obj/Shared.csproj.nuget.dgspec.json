@@ -42,9 +42,15 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
+<<<<<<< HEAD:src/Shared/obj/Shared.csproj.nuget.dgspec.json
             "Microsoft.Extensions.Localization.Abstractions": {
               "target": "Package",
               "version": "[6.0.1, )"
+=======
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+>>>>>>> parent of 81c529e (Add dbContext to seed sample data to SQL database):ShepherdPOS.API/obj/ShepherdPOS.API.csproj.nuget.dgspec.json
             }
           },
           "imports": [
