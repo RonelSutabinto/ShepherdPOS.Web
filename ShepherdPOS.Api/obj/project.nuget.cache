@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "XMNTMS8iw5ijuYxa5QvoYeqyPv+jPwyS2HnZ+J14SzwjO/GBMt3d46zCvbPz/QBHVAlShvdkZxF+odkQJduxag==",
+  "success": true,
+  "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/ronelsutabinto/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

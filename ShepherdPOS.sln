@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShepherdPOS.Web", "ShepherdPOS.Web\ShepherdPOS.Web.csproj", "{2C849DB2-3754-44BA-BA3C-81676859AA7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShepherdPOS.Api", "ShepherdPOS.Api\ShepherdPOS.Api.csproj", "{B4FA82AC-F021-4929-9899-674E0414CDD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2C849DB2-3754-44BA-BA3C-81676859AA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C849DB2-3754-44BA-BA3C-81676859AA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C849DB2-3754-44BA-BA3C-81676859AA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FA82AC-F021-4929-9899-674E0414CDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FA82AC-F021-4929-9899-674E0414CDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FA82AC-F021-4929-9899-674E0414CDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FA82AC-F021-4929-9899-674E0414CDD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
