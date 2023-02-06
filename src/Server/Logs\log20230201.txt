@@ -1,7 +1,0 @@
-2023-02-01 14:27:43.969 -08:00 [WRN] Server 91f70221-5547-4ee1-a06a-38dc08f28ce3 was considered dead by other servers, restarting...
-2023-02-01 14:27:44.146 -08:00 [WRN] Server 91f70221-5547-4ee1-a06a-38dc08f28ce3 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
-2023-02-01 18:12:41.900 -08:00 [INF] Now listening on: https://localhost:5001
-2023-02-01 18:12:41.929 -08:00 [INF] Now listening on: http://localhost:5000
-2023-02-01 18:12:41.932 -08:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-02-01 18:12:41.932 -08:00 [INF] Hosting environment: Development
-2023-02-01 18:12:41.932 -08:00 [INF] Content root path: /Users/ronelsutabinto/Documents/Source Code/CSharp/BlazorHero/CleanArchitecture-master/src/Server
