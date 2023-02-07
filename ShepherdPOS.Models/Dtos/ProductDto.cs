@@ -20,7 +20,7 @@ namespace ShepherdPOS.Models.Dtos
 
         public int Qty { get; set; }
 
-        public int CatergoryId { get; set; }
+        public int CategoryId { get; set; }
 
         public string CategoryName { get; set; }
         

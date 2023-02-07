@@ -27,11 +27,20 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Repositories\" />
     <None Remove="Repositories\Contracts\" />
+    <None Remove="Controllers\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Data\" />
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\Contracts\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShepherdPOS.Models\ShepherdPOS.Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -866,6 +866,16 @@
             "rid": "win"
           }
         }
+      },
+      "ShepherdPOS.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ShepherdPOS.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShepherdPOS.Models.dll": {}
+        }
       }
     }
   },
@@ -2210,6 +2220,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ShepherdPOS.Models/1.0.0": {
+      "type": "project",
+      "path": "../ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+      "msbuildProject": "../ShepherdPOS.Models/ShepherdPOS.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2217,6 +2232,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
+      "ShepherdPOS.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2244,7 +2260,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+              "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
