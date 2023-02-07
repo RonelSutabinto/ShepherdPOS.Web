@@ -818,6 +818,7 @@
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS/ShepherdPOS.Web/obj/Debug/net6.0/refint/ShepherdPOS.Web.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS/ShepherdPOS.Web/obj/Debug/net6.0/ShepherdPOS.Web.pdb
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS/ShepherdPOS.Web/obj/Debug/net6.0/ref/ShepherdPOS.Web.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/blazor.webassembly.js
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/dotnet.6.0.13.hkfpx0k00n.js
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/dotnet.timezones.blat
@@ -855,6 +856,8 @@
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Win32.Registry.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/mscorlib.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/netstandard.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/ShepherdPOS.Web.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/ShepherdPOS.Web.pdb
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.AppContext.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Buffers.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Collections.Concurrent.dll
@@ -1015,9 +1018,6 @@
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Xml.XPath.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Xml.XPath.XDocument.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/WindowsBase.dll
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/ShepherdPOS.Web.dll
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/ShepherdPOS.Web.pdb
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Net.HttpListener.dll.gz
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Net.WebSockets.Client.dll.gz

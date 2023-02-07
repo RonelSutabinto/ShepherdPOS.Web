@@ -1,0 +1,12 @@
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/bin/Debug/net6.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/bin/Debug/net6.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/bin/Debug/net6.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/Debug/net6.0/ref/ShepherdPOS.Models.dll
