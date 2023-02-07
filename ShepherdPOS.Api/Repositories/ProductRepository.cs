@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using Microsoft.EntityFrameworkCore;
 using ShepherdPOS.Api.Repositories.Contracts;
 using ShepherdPOS.Api.Data;

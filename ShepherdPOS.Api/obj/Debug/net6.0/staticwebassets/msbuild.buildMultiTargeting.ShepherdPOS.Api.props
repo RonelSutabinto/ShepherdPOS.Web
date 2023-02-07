@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ShepherdPOS.Api.props" />
+</Project>

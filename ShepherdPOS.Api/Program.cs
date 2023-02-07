@@ -1,6 +1,7 @@
 ﻿using ShepherdPOS.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using ShepherdPOS.Api.Repositories.Contracts;
+using ShepherdPOS.Api.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,9 @@ builder.Services.AddDbContextPool<ShepherdPosDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-builder.Services.AddScoped<IProductRepository, IProductRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+//builder.Services.AddScoped<IPosCartRepository, IPosCartRepository>();
+
 
 var app = builder.Build();
 
