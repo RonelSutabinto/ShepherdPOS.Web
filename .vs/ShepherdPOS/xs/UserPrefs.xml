@@ -1,5 +1,33 @@
-﻿<Properties StartupConfiguration="{2C849DB2-3754-44BA-BA3C-81676859AA7A}|Default">
-  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api FirstBuild="True" />
+﻿<Properties StartupConfiguration="{B4FA82AC-F021-4929-9899-674E0414CDD6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShepherdPOS.Api/Program.cs">
+    <Files>
+      <File FileName="ShepherdPOS.Api/appsettings.json" Line="4" Column="23" />
+      <File FileName="ShepherdPOS.Api/Entities/Cart.cs" />
+      <File FileName="ShepherdPOS.Api/Entities/CartItem.cs" />
+      <File FileName="ShepherdPOS.Api/Entities/Product.cs" />
+      <File FileName="ShepherdPOS.Api/Entities/ProductCategory.cs" />
+      <File FileName="ShepherdPOS.Api/Entities/User.cs" />
+      <File FileName="ShepherdPOS.Api/Data/ShepherdPosDbContext.cs" Line="9" Column="74" />
+      <File FileName="ShepherdPOS.Api/Program.cs" Line="13" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShepherdPOS" expanded="True">
+            <Node name="ShepherdPOS.Api" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api FirstBuild="True" PreferredExecutionTarget="/Applications/Firefox.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Web PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>
