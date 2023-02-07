@@ -22,12 +22,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api FirstBuild="True" PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Models FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Web PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>

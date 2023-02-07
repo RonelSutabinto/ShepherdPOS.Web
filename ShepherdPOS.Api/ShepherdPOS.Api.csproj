@@ -25,9 +25,13 @@
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Contracts\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Data\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Contracts\" />
   </ItemGroup>
 </Project>
