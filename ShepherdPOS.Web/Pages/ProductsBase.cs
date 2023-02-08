@@ -4,14 +4,13 @@ using ShepherdPOS.Web.Services.Contracts;
 
 namespace ShepherdPOS.Web.Pages
 {
-    
-	public class ProductsBase:ComponentBase
+    public class ProductsBase : ComponentBase
     {
         [Inject]
         public IProductService ProductService { get; set; }
-        
+
         [Inject]
-        public IPosCartService PosCartService { get; set; }
+        public IPosCartService ShoppingCartService { get; set; }
 
         [Inject]
         public IManageProductsLocalStorageService ManageProductsLocalStorageService { get; set; }
@@ -32,25 +31,25 @@ namespace ShepherdPOS.Web.Pages
             {
                 await ClearLocalStorage();
 
-                Products =  await ManageProductsLocalStorageService.GetCollection();
+                Products = await ManageProductsLocalStorageService.GetCollection();
 
                 var shoppingCartItems = await ManageCartItemsLocalStorageService.GetCollection();
-               
+
                 var totalQty = shoppingCartItems.Sum(i => i.Qty);
 
-                PosCartService.RaiseEventOnPosCartChanged(totalQty);
+                ShoppingCartService.RaiseEventOnPosCartChanged(totalQty);
 
             }
             catch (Exception ex)
             {
                 ErrorMessage = ex.Message;
-                
+
             }
-            
+
         }
 
         protected IOrderedEnumerable<IGrouping<int, ProductDto>> GetGroupedProductsByCategory()
-        { 
+        {
             return from product in Products
                    group product by product.CategoryId into prodByCatGroup
                    orderby prodByCatGroup.Key
@@ -69,4 +68,3 @@ namespace ShepherdPOS.Web.Pages
 
     }
 }
-

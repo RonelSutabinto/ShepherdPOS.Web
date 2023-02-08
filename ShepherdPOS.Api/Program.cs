@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShepherdPOS.Api.Repositories.Contracts;
 using ShepherdPOS.Api.Repositories;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(policy =>
+    policy.WithOrigins("http://localhost:7166", "https://localhost:7166")
+    .AllowAnyMethod()
+    .WithHeaders(HeaderNames.ContentType)
+);
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

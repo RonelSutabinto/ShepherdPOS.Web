@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-6RRoYeDP3d0xabXmcCMF66wXeJlXVPem28Trs8sQiis=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-mU8wXrw1NaAfoswi7J10exqtK90y6UBTDA8jt1T84BQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-VEJzgKvwGbPm2I+rYbqDt\/Ret+PXbgWB8pBkqxAHjz4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-0WJxmwuCKgsNP0fiuA+6gNNYVwhPz4yS+4AfhQS+nms=",
@@ -29,6 +30,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-ZMyJ9hhGB\/8OncNBBf+NtPLM17QgBVDUTx3QqpVY1cg=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-FXXasKSSy3z8h8Rlbb5yEU1ZTjNHPkfS6OXGKVcHqkc=",
+      "Newtonsoft.Json.dll": "sha256-etsgJYQb32kqVnEuCK\/nXhcwxx1keKj+1XWs1DJRpmI=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-g19VGs7fPjYMcCLlDjFJVrJoJzKFHq4bh4PV+LYyaEI=",
       "Microsoft.VisualBasic.Core.dll": "sha256-FqpPud2z\/vgMi\/KYjGER1Un8wiAPQQ0164VUwRApxVo=",
@@ -196,13 +198,15 @@
       "mscorlib.dll": "sha256-KqZqU1imWCwJ9UPDElyoolN8s7Yqhjk67wuOohFN5KA=",
       "netstandard.dll": "sha256-kBK\/QJy7\/skP97jqnvXnOFMrhWS8HZ1bsADFK\/gZkyM=",
       "System.Private.CoreLib.dll": "sha256-3webPuyNUXfAFKY5c1tC\/jBVrjZHelBwvXrr1E9VJuk=",
-      "ShepherdPOS.Web.dll": "sha256-e\/Y8Z3go5NP\/ie3D5qodYd4kFIF8Rr27aCAatwciAZo="
+      "ShepherdPOS.Models.dll": "sha256-4euzMSZnnbv28ewq9T9JKObcfMHX9KVvJJ9Dkgq4qcM=",
+      "ShepherdPOS.Web.dll": "sha256-BwkqLLAcr4O2x+Pv6zGtZqcbwAwRBTk9jakh8OeH4uk="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "ShepherdPOS.Web.pdb": "sha256-xhsH9ocDdOKtzTNAKYdmAcBB6maFWxJkPzk2FI+oFHg="
+      "ShepherdPOS.Models.pdb": "sha256-hbTKUU7tQkyOssmyKW26rJfADMUQBVNu2XnJ4lpyj9c=",
+      "ShepherdPOS.Web.pdb": "sha256-Akt7gDUoROGf+V+yIflDchrn6vnttcKV88mAf5ia3ZQ="
     },
     "runtime": {
       "dotnet.6.0.13.hkfpx0k00n.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",

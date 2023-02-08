@@ -2,11 +2,9 @@
 
 namespace ShepherdPOS.Web.Services.Contracts
 {
-	public interface IManageProductsLocalStorageService
-	{
+    public interface IManageProductsLocalStorageService
+    {
         Task<IEnumerable<ProductDto>> GetCollection();
-
         Task RemoveCollection();
     }
 }
-
