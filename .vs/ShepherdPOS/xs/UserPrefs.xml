@@ -1,65 +1,5 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShepherdPOS.Web/Pages/Products.razor">
-    <Files>
-      <File FileName="ShepherdPOS.Api/Repositories/Contracts/IProductRepository.cs" />
-      <File FileName="ShepherdPOS.Models/Dtos/CartItemQtyUpdateDto.cs" />
-      <File FileName="ShepherdPOS.Models/Dtos/CartItemToAddDto.cs" />
-      <File FileName="ShepherdPOS.Models/Dtos/ProductDto.cs" />
-      <File FileName="ShepherdPOS.Api/Repositories/Contracts/IPosCartRepository.cs" />
-      <File FileName="ShepherdPOS.Models/Dtos/CartItemDto.cs" />
-      <File FileName="ShepherdPOS.Api/Repositories/ProductRepository.cs" />
-      <File FileName="ShepherdPOS.Api/Controllers/ProductController.cs" />
-      <File FileName="ShepherdPOS.Api/Program.cs" />
-      <File FileName="ShepherdPOS.Api/Extensions/DtoConversions.cs" />
-      <File FileName="ShepherdPOS.Api/appsettings.json" />
-      <File FileName="ShepherdPOS.Api/Entities/ProductCategory.cs" />
-      <File FileName="ShepherdPOS.Api/Entities/Cart.cs" />
-      <File FileName="ShepherdPOS.Api/Entities/CartItem.cs" />
-      <File FileName="ShepherdPOS.Api/Entities/User.cs" />
-      <File FileName="ShepherdPOS.Web/Program.cs" />
-      <File FileName="ShepherdPOS.Web/Services/Contracts/IProductService.cs" />
-      <File FileName="ShepherdPOS.Web/Services/Contracts/IPosCartService.cs" />
-      <File FileName="ShepherdPOS.Web/Services/ProductService.cs" />
-      <File FileName="ShepherdPOS.Web/Pages/Products.razor" Line="30" Column="87" />
-      <File FileName="ShepherdPOS.Web/Pages/ProductsBase.cs" />
-      <File FileName="ShepherdPOS.Web/_Imports.razor" />
-      <File FileName="ShepherdPOS.Web/Pages/DisplayError.razor" />
-      <File FileName="ShepherdPOS.Api/Data/ShepherdPosDbContext.cs" />
-      <File FileName="ShepherdPOS.Web/Pages/DisplayProductsBase.cs" Line="1" Column="1" />
-      <File FileName="ShepherdPOS.Web/Pages/Counter.razor" />
-      <File FileName="ShepherdPOS.Web/Pages/FetchData.razor" Line="1" Column="1" />
-      <File FileName="ShepherdPOS.Web/Pages/DisplaySpinner.razor" Line="1" Column="1" />
-      <File FileName="ShepherdPOS.Web/Shared/MainLayout.razor" />
-      <File FileName="ShepherdPOS.Web/Shared/NavMenu.razor" />
-      <File FileName="ShepherdPOS.Web/Shared/SurveyPrompt.razor" />
-      <File FileName="ShepherdPOS.Web/Properties/launchSettings.json" />
-      <File FileName="ShepherdPOS.Web/App.razor" />
-      <File FileName="ShepherdPOS.Web/Services/PosCartService.cs" />
-      <File FileName="ShepherdPOS.Web/wwwroot/index.html" />
-      <File FileName="ShepherdPOS.Api/Entities/Product.cs" />
-      <File FileName="ShepherdPOS.Web/Pages/DisplayProducts.razor.css" Line="1" Column="1" />
-      <File FileName="ShepherdPOS.Web/Pages/ShoppingCart.razor.css" Line="1" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ShepherdPOS" expanded="True">
-            <Node name="ShepherdPOS.Api" expanded="True">
-              <Node name="Repositories" expanded="True">
-                <Node name="Contracts" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="ShepherdPOS.Web" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Products.razor" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
@@ -68,10 +8,53 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Web PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShepherdPOS.Web/Shared/CartMenu.razor">
+    <Files>
+      <File FileName="ShepherdPOS.Web/Pages/DisplayError.razor" />
+      <File FileName="ShepherdPOS.Web/Services/Contracts/IPosCartService.cs" />
+      <File FileName="ShepherdPOS.Web/Services/Contracts/IProductService.cs" />
+      <File FileName="ShepherdPOS.Web/Services/PosCartService.cs" />
+      <File FileName="ShepherdPOS.Web/Services/ProductService.cs" />
+      <File FileName="ShepherdPOS.Web/Services/Contracts/IManageCartItemsLocalStorageService.cs" />
+      <File FileName="ShepherdPOS.Web/Services/Contracts/IManageProductsLocalStorageService.cs" />
+      <File FileName="ShepherdPOS.Web/HardCoded.cs" />
+      <File FileName="ShepherdPOS.Web/Services/ManageProductsLocalStorageService.cs" />
+      <File FileName="ShepherdPOS.Web/Pages/ProductsBase.cs" />
+      <File FileName="ShepherdPOS.Web/Pages/Products.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/DisplayProductsBase.cs" />
+      <File FileName="ShepherdPOS.Web/Pages/DisplayProducts.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/DisplayProducts.razor.css" />
+      <File FileName="ShepherdPOS.Web/Pages/Counter.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/DisplaySpinner.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/DisplaySpinner.razor.css" />
+      <File FileName="ShepherdPOS.Web/Program.cs" />
+      <File FileName="ShepherdPOS.Web/Pages/ProductsByCategoryBase.cs" />
+      <File FileName="ShepherdPOS.Web/Pages/ProductsByCategory.razor" />
+      <File FileName="ShepherdPOS.Web/Shared/NavMenu.razor" />
+      <File FileName="ShepherdPOS.Web/Shared/MainLayout.razor.css" />
+      <File FileName="ShepherdPOS.Web/Shared/MainLayout.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/FetchData.razor" />
+      <File FileName="ShepherdPOS.Web/Shared/CartMenu.razor" Line="4" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShepherdPOS" expanded="True">
+            <Node name="ShepherdPOS.Web" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
 </Properties>

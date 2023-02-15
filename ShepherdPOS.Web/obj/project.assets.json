@@ -462,6 +462,29 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "MudBlazor/6.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.11",
+          "Microsoft.AspNetCore.Components.Web": "6.0.11"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
       "Newtonsoft.Json/10.0.1": {
         "type": "package",
         "dependencies": {
@@ -1768,6 +1791,29 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "MudBlazor/6.1.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.11",
+          "Microsoft.AspNetCore.Components.Web": "6.0.11"
+        },
+        "compile": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
         }
       },
       "Newtonsoft.Json/10.0.1": {
@@ -3464,6 +3510,29 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "MudBlazor/6.1.8": {
+      "sha512": "f4rEXFxzWba/P7VYaPb5FAwBctHenglpNp/MRvPaZg9DHiUdKju1U7n7LtTrKeD79zuj/58aW/U8q37OOuIgjA==",
+      "type": "package",
+      "path": "mudblazor/6.1.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Nuget.png",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.props",
+        "buildMultiTargeting/MudBlazor.props",
+        "buildTransitive/MudBlazor.props",
+        "lib/net6.0/MudBlazor.dll",
+        "lib/net6.0/MudBlazor.xml",
+        "lib/net7.0/MudBlazor.dll",
+        "lib/net7.0/MudBlazor.xml",
+        "mudblazor.6.1.8.nupkg.sha512",
+        "mudblazor.nuspec",
+        "staticwebassets/MudBlazor.min.css",
+        "staticwebassets/MudBlazor.min.js"
       ]
     },
     "Newtonsoft.Json/10.0.1": {
@@ -6484,6 +6553,7 @@
       "Blazored.LocalStorage >= 4.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.13",
+      "MudBlazor >= 6.1.8",
       "Newtonsoft.Json >= 10.0.1",
       "ShepherdPOS.Models >= 1.0.0"
     ]
@@ -6541,6 +6611,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.13, )"
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[6.1.8, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

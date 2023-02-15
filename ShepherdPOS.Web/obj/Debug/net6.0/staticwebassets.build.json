@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+k67zyGnraMv7G9AyOXiuItgYzqAAtGzfv6fnjGOuYA=",
+  "Hash": "2iDBy3vIAz1H46i677HVKbYXJYyc9X00bz2DVgdL/1w=",
   "Source": "ShepherdPOS.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/MudBlazor.min.css"
+    },
+    {
+      "Identity": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/staticwebassets/MudBlazor.min.js"
+    },
     {
       "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/blazor.boot.json",
       "SourceId": "ShepherdPOS.Web",
@@ -661,6 +695,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/ronelsutabinto/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.13/runtimes/browser-wasm/lib/net6.0/mscorlib.dll"
+    },
+    {
+      "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/MudBlazor.dll",
+      "SourceId": "ShepherdPOS.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/lib/net6.0/MudBlazor.dll"
     },
     {
       "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/netstandard.dll",
@@ -4435,6 +4486,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/System.Runtime.Extensions.dll"
+    },
+    {
+      "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net6.0/build-gz/CZ9vm65H.gz",
+      "SourceId": "ShepherdPOS.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/MudBlazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net6.0/wwwroot/_framework/MudBlazor.dll"
     },
     {
       "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net6.0/build-gz/dcCfQfKr.gz",

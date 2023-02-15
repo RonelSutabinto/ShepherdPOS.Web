@@ -1,10 +1,3 @@
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.csproj.AssemblyReference.cache
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.GeneratedMSBuildEditorConfig.editorconfig
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.AssemblyInfoInputs.cache
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.AssemblyInfo.cs
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.csproj.CoreCompileInputs.cache
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cs
-/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/appsettings.Development.json
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/appsettings.json
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/ShepherdPOS.Api
@@ -51,6 +44,13 @@
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/ShepherdPOS.Models.dll
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net6.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cache
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/staticwebassets/msbuild.ShepherdPOS.Api.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/staticwebassets/msbuild.build.ShepherdPOS.Api.props
 /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.ShepherdPOS.Api.props
