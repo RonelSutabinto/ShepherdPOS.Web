@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2iDBy3vIAz1H46i677HVKbYXJYyc9X00bz2DVgdL/1w=",
+  "Hash": "HcLxHwj0Gx8awL5LCz9c12/a6vL5f1OTF75tegdn6SU=",
   "Source": "ShepherdPOS.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -7614,6 +7614,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Images/Furniture/Furniture7.png"
+    },
+    {
+      "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Logo_w.png",
+      "SourceId": "ShepherdPOS.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "Images/Logo_w.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/Logo_w.png"
+    },
+    {
+      "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Resources/Typography.png",
+      "SourceId": "ShepherdPOS.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "Images/Resources/Typography.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/Resources/Typography.png"
     },
     {
       "Identity": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Shoes/Shoes1.png",

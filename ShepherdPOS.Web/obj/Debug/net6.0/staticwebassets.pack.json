@@ -93,6 +93,14 @@
       "PackagePath": "staticwebassets/Images/Furniture/Furniture7.png"
     },
     {
+      "Id": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Logo_w.png",
+      "PackagePath": "staticwebassets/Images/Logo_w.png"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Resources/Typography.png",
+      "PackagePath": "staticwebassets/Images/Resources/Typography.png"
+    },
+    {
       "Id": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/wwwroot/Images/Shoes/Shoes1.png",
       "PackagePath": "staticwebassets/Images/Shoes/Shoes1.png"
     },

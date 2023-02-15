@@ -6,7 +6,7 @@
 
 <MudLayout>
     <MudAppBar Elevation="1" Color="Color.Primary">
-        <MudImage Src="/Images/Logo_w.png" Width="50" Alt="Mony the dog" Class="rounded-lg" />
+        <MudImage Src="/Images/Logo_w.png" Width="50" Alt="Logo" Class="rounded-lg" />
         <MudText Typo="Typo.h6" Class="ml-2">Shepherd POS</MudText>
         <MudToolBar DisableGutters="true">
             <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
@@ -47,10 +47,44 @@
                 FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
                 FontSize = "1.25rem",
                 FontWeight = 500,
-                LineHeight = 1.6,
-                LetterSpacing = ".0075em"
+                //LineHeight = 1.6,
+                //LetterSpacing = ".0075em"
             },
 
+            H5 = new H5()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "1.65rem",
+                FontWeight = 400,
+            },
+
+            H4 = new H4()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "2.05rem",
+                FontWeight = 400,
+            },
+
+            H3 = new H3()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "2.85rem",
+                FontWeight = 400,
+            },
+
+            H2 = new H2()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "3.60rem",
+                FontWeight = 350,
+            },
+
+            H1 = new H1()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "4.95rem",
+                FontWeight = 350,
+            },
         },
 
     };
