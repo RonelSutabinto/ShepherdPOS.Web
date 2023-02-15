@@ -20,10 +20,12 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Blazored.LocalStorage" />
     <None Remove="MudBlazor" />
+    <None Remove="Pages\Content\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Services\Contracts\" />
+    <Folder Include="Pages\Content\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShepherdPOS.Models\ShepherdPOS.Models.csproj">

@@ -1,17 +1,67 @@
-﻿@inherits LayoutComponentBase
+﻿
 
-<div class="page">
-    <div class="sidebar">
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="customTheme" />
+
+<MudLayout>
+    <MudAppBar Elevation="1" Color="Color.Primary">
+        <MudImage Src="/Images/Logo_w.png" Width="50" Alt="Mony the dog" Class="rounded-lg" />
+        <MudText Typo="Typo.h6" Class="ml-2">Shepherd POS</MudText>
+        <MudToolBar DisableGutters="true">
+            <MudIconButton Icon="@Icons.Material.Outlined.Menu" Color="Color.Inherit" OnClick="@((e) => DrawerToggle())" Class="ml-3" />
+        </MudToolBar>
+
+        <MudSpacer />
+        <MudAvatar Color="Color.Dark" Edge="Edge.End">R</MudAvatar>
+    </MudAppBar>
+
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+        @*NavMenu*@
         <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <CartMenu />
-        </div>
-
-        <article class="content px-4">
+    </MudDrawer>
+    <MudMainContent>
+        @*Body*@
+        <MudContainer MaxWidth="MaxWidth.Large">
             @Body
-        </article>
-    </main>
-</div>
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+
+    MudTheme customTheme = new MudTheme()
+    {
+        Palette = new Palette()
+        {
+            Primary = Colors.Green.Default,
+            Secondary = Colors.Green.Accent3,
+            AppbarBackground = Colors.Teal.Accent4,
+            Tertiary = Colors.Teal.Accent1,
+        },
+
+        Typography = new Typography()
+        {
+            H6 = new H6()
+            {
+                FontFamily = new[] { "Roboto", "Helvetica", "Arial", "sans-serif" },
+                FontSize = "1.25rem",
+                FontWeight = 500,
+                LineHeight = 1.6,
+                LetterSpacing = ".0075em"
+            },
+
+        },
+
+    };
+
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+}
+
+

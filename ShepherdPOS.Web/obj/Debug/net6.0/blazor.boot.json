@@ -200,14 +200,14 @@
       "netstandard.dll": "sha256-kBK\/QJy7\/skP97jqnvXnOFMrhWS8HZ1bsADFK\/gZkyM=",
       "System.Private.CoreLib.dll": "sha256-3webPuyNUXfAFKY5c1tC\/jBVrjZHelBwvXrr1E9VJuk=",
       "ShepherdPOS.Models.dll": "sha256-4euzMSZnnbv28ewq9T9JKObcfMHX9KVvJJ9Dkgq4qcM=",
-      "ShepherdPOS.Web.dll": "sha256-5bS5YC06dR6OL05MR7aDh7BdTDe\/YnndC48DAyHvJhk="
+      "ShepherdPOS.Web.dll": "sha256-qnAc4CdQd+zB5Ke8L1YLs2AMR1e1\/wYMvIDw+iHILyY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "ShepherdPOS.Models.pdb": "sha256-hbTKUU7tQkyOssmyKW26rJfADMUQBVNu2XnJ4lpyj9c=",
-      "ShepherdPOS.Web.pdb": "sha256-N22cFzO8XLfbx4TKHfB5TFrIK0KctS+KYFsYaGD6bvY="
+      "ShepherdPOS.Web.pdb": "sha256-Cq04duGsDaORhHyin2PCYStq4hL9kKqxwZov8vWJ68g="
     },
     "runtime": {
       "dotnet.6.0.13.hkfpx0k00n.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",

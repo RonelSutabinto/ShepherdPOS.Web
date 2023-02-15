@@ -1,57 +1,28 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Shepherd POS</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿<MudPaper Width="250px" Class="d-inline-flex py-3" Elevation="0">
+    <MudNavMenu Class="mud-width-full" Color="Color.Primary">
+        @*<MudText Typo="Typo.h6" Class="px-4">My Application</MudText>
+            <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Secondary Text</MudText>*@
+        <MudCard Elevation="0" Square="false">
+            <MudCardHeader>
+                <CardHeaderAvatar>
+                    <MudAvatar Color="Color.Dark" Edge="Edge.End">R</MudAvatar>
+                </CardHeaderAvatar>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.body2">Ronel Sutabinto</MudText>
+                    <MudText Typo="Typo.caption">Ronels1122@gmail.com</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+        </MudCard>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="#">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> POS
-            </NavLink>
-        </div>
+        <MudNavLink Href="/" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+        <MudNavLink Href="/ThemeColor">Color</MudNavLink>
+        <MudNavLink Href="/Navigation">Navigation</MudNavLink>
+        <MudNavLink Href="/ThemeTable">Table</MudNavLink>
+        <MudNavLink Href="/ThemeComponent">Component</MudNavLink>
+        <MudNavGroup Title="Item" Icon="@Icons.Material.Filled.Ballot" Expanded="false">
+            <MudNavLink Href="/Product" Icon="@Icons.Material.Filled.Difference">Product</MudNavLink>
+        </MudNavGroup>
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="FetchData" Match="NavLinkMatch.All">
-                <span class="oi oi-plus" aria-hidden="true"></span> Invoice
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="FetchData1" Match="NavLinkMatch.All">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Item
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="FetchData2" Match="NavLinkMatch.All">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> System Settings
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="Counter" Match="NavLinkMatch.All">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Reports
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
-
+    </MudNavMenu>
+</MudPaper>
