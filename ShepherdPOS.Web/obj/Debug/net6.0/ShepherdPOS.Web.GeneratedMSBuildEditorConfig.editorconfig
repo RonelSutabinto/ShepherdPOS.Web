@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/Pages/Content/DialogTheme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGVudC9EaWFsb2dUaGVtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/Pages/Content/ThemeColor.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGVudC9UaGVtZUNvbG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/Pages/Content/ThemeComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGVudC9UaGVtZUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/Pages/Content/ThemeNavigation.razor]
