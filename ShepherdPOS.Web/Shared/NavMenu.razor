@@ -1,11 +1,7 @@
-﻿
-
-@inherits LayoutComponentBase
-
-<MudPaper Width="250px" Class="d-inline-flex py-3" Elevation="0">
+﻿<MudPaper Width="250px" Class="d-inline-flex py-3" Elevation="0">
     <MudNavMenu Class="mud-width-full" Color="Color.Primary">
         @*<MudText Typo="Typo.h6" Class="px-4">My Application</MudText>
-            <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Secondary Text</MudText>*@
+        <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Secondary Text</MudText>*@
         <MudCard Elevation="0" Square="false">
             <MudCardHeader>
                 <CardHeaderAvatar>
@@ -18,14 +14,14 @@
             </MudCardHeader>
         </MudCard>
 
-
         <MudNavLink Href="/" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
-        <MudNavLink Href="/ThemeColorr">Color</MudNavLink>
-        <MudNavLink Href="/Navigation">Navigation</MudNavLink>
-        <MudNavLink Href="/ThemeTable">Table</MudNavLink>
-        <MudNavLink Href="/ThemeComponent">Component</MudNavLink>
-        <MudNavGroup Title="Item" Icon="@Icons.Material.Filled.Ballot" Expanded="false">
-            <MudNavLink Href="/iProducts" Icon="@Icons.Material.Filled.Difference">Product</MudNavLink>
+        <MudNavLink Href="/Pos" Icon="@Icons.Material.Filled.ShoppingCart">POS</MudNavLink>
+        <MudNavLink Href="/Pos_" Icon="@Icons.Material.Filled.Difference">Product</MudNavLink>
+        <MudNavGroup Title="UIComponent" Icon="@Icons.Material.Filled.Ballot" Expanded="false">
+            <MudNavLink Href="/ThemeColor">Color</MudNavLink>
+            <MudNavLink Href="/Navigation">Navigation</MudNavLink>
+            <MudNavLink Href="/ThemeTable">Table</MudNavLink>
+            <MudNavLink Href="/ThemeComponent">Component</MudNavLink>
         </MudNavGroup>
 
     </MudNavMenu>

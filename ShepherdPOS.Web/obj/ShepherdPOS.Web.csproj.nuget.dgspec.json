@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {}
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {}
   },
   "projects": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
         "projectName": "ShepherdPOS.Models",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
+        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
         "projectName": "ShepherdPOS.Web",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/obj/",
+        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
-                "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+              "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+                "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
               }
             }
           }
@@ -97,7 +97,11 @@
           "dependencies": {
             "Blazored.LocalStorage": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.1.4, )"
+            },
+            "Blazored.Modal": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
@@ -108,9 +112,27 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "MudBlazor": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.1.8, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

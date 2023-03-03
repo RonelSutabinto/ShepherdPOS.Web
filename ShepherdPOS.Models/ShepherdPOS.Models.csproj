@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Dtos\" />
+    <None Remove="ModelView\" />
+    <None Remove="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dtos\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,39 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/11.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "8.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -15,7 +48,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -880,6 +913,34 @@
     }
   },
   "libraries": {
+    "AutoMapper/11.0.0": {
+      "sha512": "+596AnKykYCk9RxXCEF4GYuapSebQtFVvIA1oVG1rrRkCLAC7AkWehJ0brCfYUbdDW3v1H/p0W3hob7JoXGjMw==",
+      "type": "package",
+      "path": "automapper/11.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.11.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
+      "sha512": "vqbyqXknln1NFn80fbyJVPqJ3LMZhhhq8wMAl4BGTIH6GmK3gtGofuvo8bnWXXuD07y1lnMEuCmiNacvdtxPkw==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -896,10 +957,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -912,6 +973,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -921,7 +983,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2229,6 +2291,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper >= 11.0.0",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
@@ -2242,11 +2306,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
       "projectName": "ShepherdPOS.Api",
-      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
+      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -2261,8 +2325,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
-              "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+            "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+              "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
             }
           }
         }
@@ -2277,6 +2341,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.0, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[6.1.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

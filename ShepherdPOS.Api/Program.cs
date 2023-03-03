@@ -1,8 +1,14 @@
-﻿using ShepherdPOS.Api.Data;
+﻿
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using ShepherdPOS.Api.Repositories.Contracts;
-using ShepherdPOS.Api.Repositories;
+//using ShepherdPOS.Api.Repositories.Interface;
+//using ShepherdPOS.Api.Repositories;
 using Microsoft.Net.Http.Headers;
+using System;
+
+using ShepherdPOS.Api.Entities;
+using ShepherdPOS.Api.Data;
+using ShepherdPOS.Api.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +23,13 @@ builder.Services.AddDbContextPool<ShepherdPosDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+builder.Services.AddAutoMapper(typeof(ShepherdPOSMapperProfile));
+
+
+builder.Services.AddTransient<StockController>();
+//builder.Services.AddScoped<IProductRepository, ProductRepository>();
 //builder.Services.AddScoped<IPosCartRepository, IPosCartRepository>();
 
 
@@ -38,6 +50,15 @@ app.UseCors(policy =>
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+//app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+
+
+app.MapRazorPages();
 
 app.MapControllers();
 

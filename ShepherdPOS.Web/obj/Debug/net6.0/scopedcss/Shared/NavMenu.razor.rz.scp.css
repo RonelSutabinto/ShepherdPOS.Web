@@ -40,15 +40,15 @@
         line-height: 3rem;
     }
 
-.nav-item[b-t7bndyy8vt]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
+        .nav-item[b-t7bndyy8vt]  a.active {
+            background-color: rgba(255,255,255,0.25);
+            color: white;
+        }
 
-.nav-item[b-t7bndyy8vt]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
+        .nav-item[b-t7bndyy8vt]  a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
 
 @media (min-width: 641px) {
     .navbar-toggler[b-t7bndyy8vt] {
@@ -60,4 +60,3 @@
         display: block;
     }
 }
-

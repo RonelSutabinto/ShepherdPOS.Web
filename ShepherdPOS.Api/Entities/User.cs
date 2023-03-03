@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ShepherdPOS.Api.Entities
+namespace ShepherdPOS.Api.Entities.Authentication
 {
 	public class User
 	{

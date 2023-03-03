@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tN4QvUqA4MlztOs7mS5LOIqYCD0E/G9rW9BawILCn1KRFwaqzd/WGSyZIWi1+YihmWusi8lOjHTaK4hfmVMJUw==",
+  "dgSpecHash": "H3DE9Ox7cEKHx9hKD8mMpnWl+8AYoOAh0awwW7kwrqNA1R6LNEF+RqwXoVlqUsFnI1bJzzl4vo1T6joZl1cdpA==",
   "success": true,
-  "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+  "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/ronelsutabinto/.nuget/packages/automapper/11.0.0/automapper.11.0.0.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/6.1.0/automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
-    "/Users/ronelsutabinto/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.entityframeworkcore/6.0.1/microsoft.entityframeworkcore.6.0.1.nupkg.sha512",

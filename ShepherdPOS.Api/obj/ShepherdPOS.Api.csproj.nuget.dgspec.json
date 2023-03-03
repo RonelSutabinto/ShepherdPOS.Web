@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {}
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {}
   },
   "projects": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
         "projectName": "ShepherdPOS.Api",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
+        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
-                "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+              "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+                "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
               }
             }
           }
@@ -42,6 +42,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -86,14 +94,14 @@
         }
       }
     },
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
         "projectName": "ShepherdPOS.Models",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
+        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"

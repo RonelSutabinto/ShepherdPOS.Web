@@ -1,0 +1,107 @@
+﻿@*======================================================*@
+@*https://mudblazor.com*@
+@*Sample code UI component from mudblazor framework*@
+@*=====================================================*@
+@*=====================================================*@
+
+@page "/ThemeColor"
+
+<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Colours</MudText>
+<MudText Color="Color.Surface" Class="mb-4">Color Theme and Typography</MudText>
+
+<MudGrid Class="mt-4">
+
+    <MudTabs Elevation="25" Color="Color.Transparent" Rounded="true" PanelClass="mt-6">
+        <MudTabPanel Text="Colours">
+
+            <MudCard Elevation="25">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Color Theme (MudBlazor Color Palette)</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+
+                <MudCardContent>
+                    <MudGrid>
+                        <MudPaper Class="d-flex flex-wrap gap-4 m-4" MaxWidth="528px" Elevation="0">
+                            <MudPaper Class="mud-theme-primary pa-4" Width="456px" Height="64px">
+                                <MudText Typo="Typo.subtitle2">Primary (Colors.Green.Default)</MudText>
+                            </MudPaper>
+                            <MudPaper Class="mud-theme-secondary pa-4" Width="456px" Height="64px">
+                                <MudText Typo="Typo.subtitle2">Secondary (Colors.Green.Accent3)</MudText>
+                            </MudPaper>
+                            <MudPaper Class="mud-theme-tertiary pa-4" Width="456px" Height="64px">
+                                <MudText Typo="Typo.subtitle2" Color="Color.Dark">Tertiary ( Colors.Teal.Accent4 )</MudText>
+                            </MudPaper>
+                            <MudPaper Class="mud-theme-error pa-4" Width="456px" Height="64px">
+                                <MudText Typo="Typo.subtitle2">Error/Remove records (Colors.Error)</MudText>
+                            </MudPaper>
+                        </MudPaper>
+                    </MudGrid>
+                </MudCardContent>
+
+            </MudCard>
+        </MudTabPanel>
+
+        <MudTabPanel Text="Typography">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Class="mb-2" Typo="Typo.h6">Typography</MudText>
+                    <MudText Color="Color.Surface" Class="mb-4">Roboto is the Default family font. The alternative font style if Roboto is not available are the "Helvetica, Arial or sans-serif" </MudText>
+
+                </CardHeaderContent>
+            </MudCardHeader>
+
+            <MudCardContent>
+                <MudGrid>
+                    <MudPaper Class="d-flex flex-wrap gap-4 m-4" MaxWidth="728px" Elevation="0">
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h1">h1. Heading</MudText>
+                        </MudPaper>
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h2">h2. Heading</MudText>
+                        </MudPaper>
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h3">h3. Heading</MudText>
+                        </MudPaper>
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h4">h4. Heading</MudText>
+                        </MudPaper>
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h5">h5. Heading</MudText>
+                        </MudPaper>
+                        <MudPaper Class="pa-4" Width="656px">
+                            <MudText Typo="Typo.h6">h6. Heading</MudText>
+                        </MudPaper>
+
+                        <MudText Typo="Typo.subtitle1">subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</MudText>
+                        <MudText Typo="Typo.subtitle2">subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur</MudText>
+                        <MudText Typo="Typo.body1">body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur.</MudText>
+                        <MudText Typo="Typo.body2">body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur.</MudText>
+                        <MudText Typo="Typo.button">BUTTON TEXT</MudText>
+                        <MudText Typo="Typo.caption">caption text</MudText>
+                        <MudText Typo="Typo.overline">OVERLINE TEXT</MudText>
+                    </MudPaper>
+                </MudGrid>
+            </MudCardContent>
+
+
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Class="mb-2 mt-6" Typo="Typo.h6">Code Snippet Typography Settings</MudText>
+                    <MudImage Fluid="true" Src="/Images/Resources/Typography.png" Alt="Code Snippet typography settings" Class="rounded-lg" />
+                </CardHeaderContent>
+            </MudCardHeader>
+
+        </MudTabPanel>
+    </MudTabs>
+
+</MudGrid>
+
+
+
+
+@code {
+
+}
+

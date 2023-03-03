@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
       "projectName": "ShepherdPOS.Models",
-      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+      "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
+      "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"

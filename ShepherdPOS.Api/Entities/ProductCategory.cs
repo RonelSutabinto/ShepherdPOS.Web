@@ -1,15 +1,11 @@
-﻿using System;
-namespace ShepherdPOS.Api.Entities
+﻿namespace ShepherdPOS.Api.Entities
 {
-	public class ProductCategory
-	{
-        public int  Id { get; set; }
+    public class ProductCategory
+    {
+        public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public string IconCSS { get; set; }
-
-        
     }
 }
-

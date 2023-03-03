@@ -1,0 +1,107 @@
+﻿@*======================================================*@
+@*https://mudblazor.com*@
+@*Sample code UI component from mudblazor framework*@
+@*=====================================================*@
+@*=====================================================*@
+
+@page "/Navigation"
+
+
+<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Navigation</MudText>
+<MudText Color="Color.Surface" Class="mb-4">Responsive Menu</MudText>
+
+<MudGrid Class="mt-4">
+    <MudTabs Elevation="25" Color="Color.Transparent" Rounded="true" PanelClass="mt-6">
+
+        <MudTabPanel Text="MudNavGroup with Expanded menu property">
+            <MudCard Elevation="25">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Navigation Menu Basic Usage</MudText>
+                        <MudText Color="Color.Surface" Class="mb-4"> The Extended property of a MudNavGroup can be bound in two directions, allowing you to manage behavior in both the expanded and collapsed states.</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+
+                <MudCardContent>
+
+                    @*code snippet here*@
+
+                    <MudGrid Class="ml-6 mr-6 mb-6">
+                        <MudPaper Width="250px" Class="d-inline-flex py-3" Elevation="0">
+                            <MudNavMenu Class="mud-width-full" Color="Color.Primary">
+                                <MudCard Elevation="0" Square="false">
+                                    <MudCardHeader>
+                                        <CardHeaderAvatar>
+                                            <MudAvatar Color="Color.Dark" Edge="Edge.End">R</MudAvatar>
+                                        </CardHeaderAvatar>
+                                        <CardHeaderContent>
+                                            <MudText Typo="Typo.body2">Ronel Sutabinto</MudText>
+                                            <MudText Typo="Typo.caption">Ronels1122@gmail.com</MudText>
+                                        </CardHeaderContent>
+                                    </MudCardHeader>
+                                </MudCard>
+
+
+                                <MudNavLink>Dashboard</MudNavLink>
+                                <MudNavLink>Color</MudNavLink>
+                                <MudNavLink>Navigation</MudNavLink>
+                                <MudNavLink>Table</MudNavLink>
+                                <MudNavLink>Component</MudNavLink>
+                                <MudNavGroup Title="Item" Expanded="false">
+                                    <MudNavLink>Product</MudNavLink>
+                                    <MudNavLink>Item1</MudNavLink>
+                                    <MudNavLink>Item2</MudNavLink>
+                                </MudNavGroup>
+
+                            </MudNavMenu>
+                        </MudPaper>
+
+                    </MudGrid>
+                </MudCardContent>
+
+            </MudCard>
+
+        </MudTabPanel>
+
+        <MudTabPanel Text="App Bar">
+
+            <MudCard Elevation="25">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">App Bar Navigation</MudText>
+                        <MudText Color="Color.Surface" Class="mb-4"> A contextual action bar is a tool that appears when an on-page element is selected and offers relevant options. And reveal or conceal the menu bar, use the toggle buttons on the left side of the navbar.</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+
+                <MudCardContent>
+
+                    <MudAppBar Color="Color.Primary" Fixed="false">
+
+                        <MudImage Src="/Images/Logo_w.png" Width="50" Alt="Mony the dog" Class="rounded-lg" />
+                        <MudText Typo="Typo.h6" Class="ml-2">Shepherd POS</MudText>
+                        <MudToolBar DisableGutters="true">
+                            <MudIconButton Class="ml-4" Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
+                        </MudToolBar>
+
+                        <MudSpacer />
+
+                        <MudAvatar Color="Color.Dark" Edge="Edge.End">R</MudAvatar>
+                    </MudAppBar>
+
+                </MudCardContent>
+            </MudCard>
+
+        </MudTabPanel>
+
+    </MudTabs>
+
+</MudGrid>
+
+
+
+
+
+@code {
+
+}
+

@@ -6,32 +6,39 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\temp</OutputPath>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>anycpu</PlatformTarget>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.13" PrivateAssets="all" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
-    <PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
-    <PackageReference Include="MudBlazor" Version="6.1.0" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.1.4" />
+    <PackageReference Include="MudBlazor" Version="6.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Blazored.Modal" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Services\" />
     <None Remove="Services\Contracts\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Blazored.LocalStorage" />
     <None Remove="MudBlazor" />
+    <None Remove="Microsoft.Extensions.Localization" />
     <None Remove="Pages\Content\" />
+    <None Remove="Pages\Pos\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.AspNetCore.Components.WebAssembly" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.Extensions.Http" />
+    <None Remove="Blazored.Modal" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Services\Contracts\" />
-    <Folder Include="Pages\Content\" />
+    <Folder Include="Pages\UIComponent\" />
+    <Folder Include="Pages\Pos\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShepherdPOS.Models\ShepherdPOS.Models.csproj">
