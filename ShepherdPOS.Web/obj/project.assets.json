@@ -462,11 +462,11 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "MudBlazor/6.1.8": {
+      "MudBlazor/6.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.11",
-          "Microsoft.AspNetCore.Components.Web": "6.0.11"
+          "Microsoft.AspNetCore.Components": "6.0.10",
+          "Microsoft.AspNetCore.Components.Web": "6.0.10"
         },
         "compile": {
           "lib/net6.0/MudBlazor.dll": {
@@ -1793,11 +1793,11 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "MudBlazor/6.1.8": {
+      "MudBlazor/6.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "6.0.11",
-          "Microsoft.AspNetCore.Components.Web": "6.0.11"
+          "Microsoft.AspNetCore.Components": "6.0.10",
+          "Microsoft.AspNetCore.Components.Web": "6.0.10"
         },
         "compile": {
           "lib/net6.0/MudBlazor.dll": {
@@ -3512,10 +3512,10 @@
         "runtime.json"
       ]
     },
-    "MudBlazor/6.1.8": {
-      "sha512": "f4rEXFxzWba/P7VYaPb5FAwBctHenglpNp/MRvPaZg9DHiUdKju1U7n7LtTrKeD79zuj/58aW/U8q37OOuIgjA==",
+    "MudBlazor/6.1.0": {
+      "sha512": "x6ZDjHjEC/H96bWpjINR7IhGWxNXbblOEHayg/uyUejoepe891p8UfD/FwkYK2EqQQH3LPl0l3EN+g0MTgfuZA==",
       "type": "package",
-      "path": "mudblazor/6.1.8",
+      "path": "mudblazor/6.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3529,8 +3529,9 @@
         "lib/net6.0/MudBlazor.xml",
         "lib/net7.0/MudBlazor.dll",
         "lib/net7.0/MudBlazor.xml",
-        "mudblazor.6.1.8.nupkg.sha512",
+        "mudblazor.6.1.0.nupkg.sha512",
         "mudblazor.nuspec",
+        "staticwebassets/MudBlazor.css",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
       ]
@@ -6553,7 +6554,7 @@
       "Blazored.LocalStorage >= 4.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.13",
-      "MudBlazor >= 6.1.8",
+      "MudBlazor >= 6.1.0",
       "Newtonsoft.Json >= 10.0.1",
       "ShepherdPOS.Models >= 1.0.0"
     ]
@@ -6614,7 +6615,7 @@
           },
           "MudBlazor": {
             "target": "Package",
-            "version": "[6.1.8, )"
+            "version": "[6.1.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

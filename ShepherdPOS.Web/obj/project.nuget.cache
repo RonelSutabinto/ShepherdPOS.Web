@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bwfwXex/aejf6oe+QIao+l4koHD27UqfbAiNGp9T3GhoKk4+lkupCoInxeRe6mq4hOzlJ9O4ZR6zKHxwc/7jtg==",
+  "dgSpecHash": "bYZlb99q8o458iTm3tN0YL6WBo9xLCnKo6yJ13ow3MiB0rpoppPMWQ2+KW6AZLiZwVEoxrjOUE2463UNb7cdDA==",
   "success": true,
   "projectFilePath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "/Users/ronelsutabinto/.nuget/packages/microsoft.jsinterop.webassembly/6.0.13/microsoft.jsinterop.webassembly.6.0.13.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.8/mudblazor.6.1.8.nupkg.sha512",
+    "/Users/ronelsutabinto/.nuget/packages/mudblazor/6.1.0/mudblazor.6.1.0.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/newtonsoft.json/10.0.1/newtonsoft.json.10.0.1.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/runtime.any.system.collections/4.3.0/runtime.any.system.collections.4.3.0.nupkg.sha512",
     "/Users/ronelsutabinto/.nuget/packages/runtime.any.system.diagnostics.tools/4.3.0/runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",

@@ -9,15 +9,15 @@ namespace ShepherdPOS.Api.Repositories
 	public class ProductRepository :IProductRepository
 
     {
-        private readonly ShepherdPosDbContext shopOnlineDbContext;
+        private readonly ShepherdPosDbContext DbContext;
 
-        public ProductRepository(ShepherdPosDbContext shopOnlineDbContext)
+        public ProductRepository(ShepherdPosDbContext DbContext_)
         {
-            this.shopOnlineDbContext = shopOnlineDbContext;
+            this.DbContext = DbContext_;
         }
         public async Task<IEnumerable<ProductCategory>> GetCategories()
         {
-            var categories = await this.shopOnlineDbContext.ProductCategories.ToListAsync();
+            var categories = await this.DbContext.ProductCategories.ToListAsync();
            
             return categories; 
         
@@ -25,13 +25,13 @@ namespace ShepherdPOS.Api.Repositories
 
         public async Task<ProductCategory> GetCategory(int id)
         {
-            var category = await shopOnlineDbContext.ProductCategories.SingleOrDefaultAsync(c => c.Id == id);
+            var category = await DbContext.ProductCategories.SingleOrDefaultAsync(c => c.Id == id);
             return category;
         }
 
         public async Task<Product> GetItem(int id)
         {
-            var product = await shopOnlineDbContext.Products
+            var product = await DbContext.Products
                                 .Include(p => p.ProductCategory)
                                 .SingleOrDefaultAsync(p => p.Id == id);
             return product;
@@ -39,7 +39,7 @@ namespace ShepherdPOS.Api.Repositories
 
         public async Task<IEnumerable<Product>> GetItems()
         {
-            var products = await this.shopOnlineDbContext.Products
+            var products = await this.DbContext.Products
                                      .Include(p => p.ProductCategory).ToListAsync();
 
             return products;
@@ -48,7 +48,7 @@ namespace ShepherdPOS.Api.Repositories
 
         public async Task<IEnumerable<Product>> GetItemsByCategory(int id)
         {
-            var products = await this.shopOnlineDbContext.Products
+            var products = await this.DbContext.Products
                                      .Include(p => p.ProductCategory)
                                      .Where(p => p.CategoryId == id).ToListAsync();
             return products;
