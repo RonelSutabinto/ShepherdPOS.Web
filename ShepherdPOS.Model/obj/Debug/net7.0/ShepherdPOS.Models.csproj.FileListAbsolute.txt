@@ -1,0 +1,96 @@
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/_W_ASM/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/BackUp/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS  Step2/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS Step7/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-113 JavaScipt/code/ShepherdPOS/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.deps.json
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.AssemblyInfo.cs
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Models.dll
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Models.pdb
+/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Models.dll

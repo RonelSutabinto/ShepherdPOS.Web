@@ -1,18 +1,18 @@
 {
   "iisSettings": {
     "windowsAuthentication": false,
-    "anonymousAuthentication": true,
+    "anonymousAuthentication": false,
     "iisExpress": {
-      "applicationUrl": "http://localhost:45189",
-      "sslPort": 44384
+      "applicationUrl": "http://localhost:24215",
+      "sslPort": 44341
     }
   },
   "profiles": {
-    "ShepherdPOS.Web": {
+    "https": {
       "commandName": "Project",
       "launchBrowser": true,
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "applicationUrl": "https://localhost:7166;http://localhost:5127",
+      "applicationUrl": "https://localhost:7265;http://localhost:5221",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

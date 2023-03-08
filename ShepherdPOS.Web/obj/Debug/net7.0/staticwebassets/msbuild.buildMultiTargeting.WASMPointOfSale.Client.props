@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/WASMPointOfSale.Client.props" />
+</Project>

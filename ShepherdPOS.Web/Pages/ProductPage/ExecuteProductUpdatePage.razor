@@ -1,0 +1,110 @@
+﻿@page "/product/create"
+@page "/product/edit/{Id:int}"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+@if (Id == 0)
+{
+    <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Add Product</MudText>
+}
+else
+{
+    <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Edit Product</MudText>
+}
+<MudText Color="Color.Surface" Class="mb-4">Create, update and delete products </MudText>
+
+<MudGrid>
+    @if (productCategories == null && product == null)
+    {
+        <Loader />
+    }
+    else
+    {
+        <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="row">
+                <div class="mb-3 col-4">
+                    <label for="ProductCategoryId" class="form-label">Category</label>
+                    <InputSelect id="ProductCategoryId" @bind-Value="product!.ProductCategoryId" class="form-control">
+                        @foreach (var category in productCategories!)
+                        {
+                            <option value="@category.Value">@category.Text</option>
+                        }
+                    </InputSelect>
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="Code" class="form-label">Code</label>
+                    <InputText id="Code" @bind-Value="product!.Barcode" class="form-control" />
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="Name" class="form-label">Name</label>
+                    <InputText id="Name" @bind-Value="product!.ProductName" class="form-control" />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="Description" class="form-label">Description</label>
+                <InputText id="Description" @bind-Value="product!.Description" class="form-control" />
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-2">
+                    <label for="Price" class="form-label">Price</label>
+                    <InputNumber id="Price" @bind-Value="product!.SalePrice" class="form-control" />
+                </div>
+                <div class="mb-3 col-2">
+                    <label for="Tax" class="form-label">Tax</label>
+                    <InputNumber id="Tax" @bind-Value="product!.TaxAmount" class="form-control" />
+                    @if (product.Id == 0)
+                    {
+                        <p class="small fst-italic">The tax has default of 20% of the product sale price.</p>
+                    }
+                </div>
+                <div class="mb-3 col-2">
+                    <label for="ReorderAtStockLevel" class="form-label">Minimum Stock Value</label>
+                    <InputNumber id="ReorderAtStockLevel" @bind-Value="product!.MinimumStock" class="form-control" />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Save Record</button>
+            <MudItem xs="12" sm="6" md="3" Class="mt-6 mb-2 m-4">
+                <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="btn btn-success" Color="Color.Default">Back</MudButton>
+            </MudItem>
+
+        </EditForm>
+    }
+
+</MudGrid>
+
+
+@code {
+    [Parameter] public int Id { get; set; }
+
+    SelectedItemValueDto[]? productCategories = null;
+    UpdateProductDto? product = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        productCategories = await Http.GetFromJsonAsync<SelectedItemValueDto[]>("api/productcategory/selecteditemlist");
+
+        if (Id == 0)
+            product = new UpdateProductDto { ProductCategoryId = productCategories!.First().Value };
+        else
+            product = await Http.GetFromJsonAsync<UpdateProductDto>($"api/product/getproductforupdate/{Id}");
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (Id == 0)
+            await Http.PostAsJsonAsync<UpdateProductDto>("api/product", product!);
+        else
+            await Http.PutAsJsonAsync<UpdateProductDto>("api/product", product!);
+
+        NavigationManager.NavigateTo("product");
+    }
+
+    private void Back() =>
+        NavigationManager.NavigateTo("product");
+}

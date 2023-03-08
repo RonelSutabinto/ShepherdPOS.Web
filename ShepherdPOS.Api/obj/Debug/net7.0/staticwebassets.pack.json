@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Api/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.ShepherdPOS.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.ShepherdPOS.Api.props",
+      "PackagePath": "build\\ShepherdPOS.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ShepherdPOS.Api.props",
+      "PackagePath": "buildMultiTargeting\\ShepherdPOS.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ShepherdPOS.Api.props",
+      "PackagePath": "buildTransitive\\ShepherdPOS.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
