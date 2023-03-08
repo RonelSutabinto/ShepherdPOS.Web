@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace ShepherdPOS.Api.Entities
+﻿namespace ShepherdPOS.Api.Entities
 {
     public class SaleProduct
     {
@@ -9,20 +6,17 @@ namespace ShepherdPOS.Api.Entities
 
         public int SaleId { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime Timestamp { get; set; }
 
-        public string Barcode { get; set; } = string.Empty;
+        public string Code { get; set; } = string.Empty;
 
-        public string ProductName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
 
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal SalePrice { get; set; }
+        public decimal Price { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal TaxAmount { get; set; }
+        public decimal Tax { get; set; }
 
 
         public Sale? Sale { get; set; }
     }
 }
-

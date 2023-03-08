@@ -1,34 +1,28 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.ComponentModel.DataAnnotations.Schema;
-
+﻿
 namespace ShepherdPOS.Api.Entities
 {
     public class Product
     {
         public int Id { get; set; }
 
-        public int ProductCategoryId { get; set; }
+        public int CategoryId { get; set; }
 
-        public string Barcode { get; set; } = string.Empty;
+        public string? Code { get; set; }
 
-        public string ProductName { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
-        public string Description { get; set; } = string.Empty;
+        public string? Description { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal SalePrice { get; set; }
+        public decimal Price { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal TaxAmount { get; set; }
+        public decimal Tax { get; set; }
 
-        public int MinimumStock { get; set; }
+        public int ReorderAtStockLevel { get; set; }
 
-        public string ProductBand { get; set; } = string.Empty;
+        public int Qty { get; set; }
 
         public string ImageURL { get; set; } = string.Empty;
-
 
         public ProductCategory? ProductCategory { get; set; }
     }
 }
-
