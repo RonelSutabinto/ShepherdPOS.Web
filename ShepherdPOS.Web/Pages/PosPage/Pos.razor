@@ -1,0 +1,66 @@
+﻿@page "/pos"
+
+@inject HttpClient Http
+@inject IJSRuntime JsRuntime
+
+<PageTitle>POS</PageTitle>
+<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">POS</MudText>
+<MudText Color="Color.Surface" Class="mb-4">Real time point of sales system </MudText>
+
+<MudGrid>
+    <div class="row">
+        <div class="col-md-5">
+            <CartItemListPage Cart="cart"
+                              OnRemoveProduct="HandleRemoveProduct"
+                              OnAddPayment="HandleAddPayment" />
+        </div>
+        <div class="col-md-7">
+            <ProductSelection ProductCategories="allProductCategories"
+                              Products="allProducts"
+                              OnProductSelect="HandleProductSelect" />
+        </div>
+    </div>
+
+</MudGrid>
+    
+    @code {
+        ProductGroupView[]? allProductCategories;
+        SelectProductView[]? allProducts;
+        ExecuteHandleCartView cart = new();
+
+        protected override async Task OnInitializedAsync()
+        {
+            allProductCategories = await Http.GetFromJsonAsync<ProductGroupView[]>("api/productcategory");
+            allProducts = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
+
+        }
+
+        private async Task HandleProductSelect(SelectProductView product)
+        {
+            CartQuantityRequestDto CartQuantityRequestDto = new()
+            {
+                ProductId = product.Id,
+                CartQuantity = cart.ProductQuantity(product.Barcode)
+            };
+
+            var response = await Http.PostAsJsonAsync<CartQuantityRequestDto>("api/checkstocksale/request", CartQuantityRequestDto);
+            var canBook = await response.Content.ReadFromJsonAsync<bool>();
+
+            if (canBook)
+                cart.AppendToCart(product);
+            else
+                await JsRuntime.InvokeVoidAsync("alert", "Unable to add to cart, insufficient stock.");
+        }
+
+        private void HandleRemoveProduct(SelectProductView product)
+        {
+            cart.DeleteFromCart(product);
+        }
+
+        private async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto)
+        {
+            StartPosDto StartPosDto = new() { Cart = cart, Payment = AppendPaymentDto };
+            await Http.PostAsJsonAsync<StartPosDto>("api/Sale", StartPosDto);
+            cart = new();
+        }
+    }

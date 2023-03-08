@@ -1,0 +1,95 @@
+﻿@page "/product"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Products</PageTitle>
+<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Product Records</MudText>
+<MudText Color="Color.Surface" Class="mb-4">Create, update and delete products </MudText>
+
+<MudGrid>
+    <MudItem xs="12" sm="6" md="3">
+        <MudButton @onclick="Create" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowDownward" class="btn btn-success" Color="Color.Primary">Add New Product</MudButton>
+    </MudItem>
+
+
+
+   
+    @if (products == null)
+    {
+        <Loader />
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Barcode</th>
+                    <th>Product Name</th>
+                    <th>Sale Price</th>
+                    <th>Tax Amount</th>
+                    <th>Minimum Stock Required</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in products)
+                {
+                    <tr>
+                        <td>@product.Barcode</td>
+                        <td>@product.ProductName</td>
+                        <td>@product.SalePrice</td>
+                        <td>@product.TaxAmount</td>
+                        <td>@product.MinimumStock</td>
+                        <td class="text-end g-4">
+
+                            <MudIconButton @onclick="() => Edit(product.Id)" Icon="@Icons.Material.Filled.Edit" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" />
+                            <MudIconButton @onclick="() => Delete(product.Id, product.ProductName)" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" />
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+
+
+
+</MudGrid>
+
+@code {
+
+    private SelectProductView[]? products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await Get();
+        }
+        catch (AccessTokenNotAvailableException exception)
+        {
+            exception.Redirect();
+        }
+    }
+
+    private async Task Get() =>
+        products = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
+
+    private void Create() =>
+        NavigationManager.NavigateTo("product/create");
+
+    private void Edit(int id) =>
+        NavigationManager.NavigateTo($"product/edit/{id}");
+
+    private async Task Delete(int id, string name)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", $"Delete Product {name}?");
+        if (confirmed)
+        {
+            await Http.DeleteAsync($"api/product/{id}");
+            await Get();
+        }
+    }
+}
