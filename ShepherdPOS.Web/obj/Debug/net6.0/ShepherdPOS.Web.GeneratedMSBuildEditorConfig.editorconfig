@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ShepherdPOS.Web
+build_property.RootNamespace = ShepherdPOS.Web
+build_property.ProjectDir = /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Pos/AddDiscount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zL0FkZERpc2NvdW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Pos/CartList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zL0NhcnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Pos/ItemSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zL0l0ZW1TZWxlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Pos/PosStartPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zL1Bvc1N0YXJ0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Product/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0RGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Product/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Product/ProductsByCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9Qcm9kdWN0c0J5Q2F0ZWdvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/UIComponent/DialogTheme.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVUlDb21wb25lbnQvRGlhbG9nVGhlbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/UIComponent/ThemeColor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVUlDb21wb25lbnQvVGhlbWVDb2xvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/UIComponent/ThemeComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVUlDb21wb25lbnQvVGhlbWVDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/UIComponent/ThemeNavigation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVUlDb21wb25lbnQvVGhlbWVOYXZpZ2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/UIComponent/ThemeTable.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVUlDb21wb25lbnQvVGhlbWVUYWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/CartMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0NhcnRNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/LoadMessenger.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0xvYWRNZXNzZW5nZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/DisplaySpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlzcGxheVNwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-87o2o4fvja
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Pos/PosPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zL1Bvc1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cpqoffcn84
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Pages/Product/DisplayProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdC9EaXNwbGF5UHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-u3kk5k5w49
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-z0qk34803n
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-t7bndyy8vt
+
+[/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/Shared/ProductCategoriesNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Byb2R1Y3RDYXRlZ29yaWVzTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-uxuyjr1erq

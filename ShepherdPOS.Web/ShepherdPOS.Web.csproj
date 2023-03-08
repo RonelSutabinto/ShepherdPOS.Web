@@ -1,34 +1,49 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' ">
-    <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Blazored.Modal" Version="7.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.1" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="7.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.13" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.1.4" />
     <PackageReference Include="MudBlazor" Version="6.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+    <None Remove="Services\" />
+    <None Remove="Services\Contracts\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Blazored.LocalStorage" />
+    <None Remove="MudBlazor" />
+    <None Remove="Microsoft.Extensions.Localization" />
+    <None Remove="Pages\Content\" />
+    <None Remove="Pages\Product\" />
+    <None Remove="Pages\Pos\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.AspNetCore.Components.WebAssembly" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\ShepherdPOS.Model\ShepherdPOS.Models.csproj">
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Pages\UIComponent\" />
+    <Folder Include="Pages\Product\" />
+    <Folder Include="Pages\Pos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShepherdPOS.Models\ShepherdPOS.Models.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="MudBlazor" />
   </ItemGroup>
 </Project>

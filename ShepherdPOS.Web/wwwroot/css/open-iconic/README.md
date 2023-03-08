@@ -1,4 +1,4 @@
-[Open Iconic v1.1.1](https://github.com/iconic/open-iconic)
+﻿[Open Iconic v1.1.1](https://github.com/iconic/open-iconic)
 ===========
 
 ### Open Iconic is the open source sibling of [Iconic](https://github.com/iconic/open-iconic). It is a hyper-legible collection of 223 icons with a tiny footprint&mdash;ready to use with Bootstrap and Foundation. [View the collection](https://github.com/iconic/open-iconic)
@@ -8,7 +8,7 @@
 ## What's in Open Iconic?
 
 * 223 icons designed to be legible down to 8 pixels
-* Super-light SVG files - 61.8 for the entire set
+* Super-light SVG files - 61.8 for the entire set 
 * SVG sprite&mdash;the modern replacement for icon fonts
 * Webfont (EOT, OTF, SVG, TTF, WOFF), PNG and WebP formats
 * Webfont stylesheets (including versions for Bootstrap and Foundation) in CSS, LESS, SCSS and Stylus formats
@@ -33,7 +33,7 @@ We like SVGs and we think they're the way to display icons on the web. Since Ope
 
 Open Iconic also comes in a SVG sprite which allows you to display all the icons in the set with a single request. It's like an icon font, without being a hack.
 
-Adding an icon from an SVG sprite is a little different than what you're used to, but it's still a piece of cake. *Tip: To make your icons easily style able, we suggest adding a general class to the* `<svg>` *tag and a unique class name for each different icon in the* `<use>` *tag.*
+Adding an icon from an SVG sprite is a little different than what you're used to, but it's still a piece of cake. *Tip: To make your icons easily style able, we suggest adding a general class to the* `<svg>` *tag and a unique class name for each different icon in the* `<use>` *tag.*  
 
 ```
 <svg class="icon">
@@ -112,3 +112,4 @@ All code (including SVG markup) is under the [MIT License](http://opensource.org
 ### Fonts
 
 All fonts are under the [SIL Licensed](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web).
+
