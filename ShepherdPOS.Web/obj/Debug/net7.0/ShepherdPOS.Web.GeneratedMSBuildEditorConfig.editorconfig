@@ -1,5 +1,5 @@
 is_global = true
-build_property.TargetFramework = net6.0
+build_property.TargetFramework = net7.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
@@ -10,7 +10,7 @@ build_property._SupportedPlatformList = browser
 build_property.RootNamespace = ShepherdPOS.Web
 build_property.RootNamespace = ShepherdPOS.Web
 build_property.ProjectDir = /Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/
-build_property.RazorLangVersion = 6.0
+build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = /Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web

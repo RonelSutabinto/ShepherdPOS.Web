@@ -1,30 +1,120 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {}
+    "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {}
   },
   "projects": {
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+    "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
-        "projectName": "ShepherdPOS.Models",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+        "projectName": "ShepherdPOS.Api",
+        "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/obj/",
+        "outputPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+                "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "projectName": "ShepherdPOS.Models",
+        "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
+        "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
+        "outputPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +125,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -57,30 +147,33 @@
         }
       }
     },
-    "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
+    "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+        "projectUniqueName": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
         "projectName": "ShepherdPOS.Web",
-        "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+        "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
         "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-        "outputPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Web/obj/",
+        "outputPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
-                "projectPath": "/Users/ronelsutabinto/Documents/Source Code/Digital Design Course/Winter2023/DGL-309 Capstone/Other_/Backup_/ShepherdPOS.Web_Step7/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
+              "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj": {
+                "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj"
+              },
+              "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj": {
+                "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj"
               }
             }
           }
@@ -92,8 +185,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Blazored.LocalStorage": {
               "target": "Package",
@@ -142,12 +235,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

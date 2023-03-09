@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/ShepherdPOS.Models.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
       "projectName": "ShepherdPOS.Models",
-      "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/ShepherdPOS.Models.csproj",
+      "projectPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/ShepherdPOS.Models.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/ShepherdPOS_Final/ShepherdPOS.Model/obj/",
+      "outputPath": "/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Models/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"

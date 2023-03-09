@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -28,8 +28,6 @@
     <None Remove="MudBlazor" />
     <None Remove="Microsoft.Extensions.Localization" />
     <None Remove="Pages\Content\" />
-    <None Remove="Pages\Product\" />
-    <None Remove="Pages\Pos\" />
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.AspNetCore.Components.WebAssembly" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
@@ -38,11 +36,12 @@
     <Folder Include="Services\" />
     <Folder Include="Services\Interface\" />
     <Folder Include="Pages\UIComponent\" />
-    <Folder Include="Pages\Product\" />
-    <Folder Include="Pages\Pos\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShepherdPOS.Models\ShepherdPOS.Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ShepherdPOS.Api\ShepherdPOS.Api.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
