@@ -9,6 +9,7 @@
 
 
 
+using System;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +19,7 @@ using ShepherdPOS.Api.Entities;
 using ShepherdPOS.Models.Classes;
 using ShepherdPOS.Models.DataTObject;
 using ShepherdPOS.Models.ViewModels;
+using ShepherdPOS.Web.Pages.PosPage;
 
 namespace ShepherdPOS.Api.Controllers
 {
@@ -37,94 +39,99 @@ namespace ShepherdPOS.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<SalesMasterView>> Get()
+        public async Task<IEnumerable<SalesMasterView>> GetAll()
         {
-            return await DBContext
-                .Sales.Include(s => s.PosCartTransactions).OrderByDescending(s => s.DateTime)
-                .Select(s => new SalesMasterView
-                {
-                    Id = s.Id,
-                    DateTime = s.DateTime,
-                    Qnty = s.Qnty,
-                    TaxAmount = s.Tax,
-                    TotalAmount = s.TotalAmount,
-                    Discount = s.Discount,
-                    AmountDue = s.AmountDue,
-                    AmountPaid = s.PosCartTransactions!.Where(st => st.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(st => st.Amount)
-                }).ToArrayAsync();
+            try
+            {
+
+                var result = await this.DBContext.Sales.Include(_sale => _sale.PosCartTransactions).OrderByDescending(_sale => _sale.Id)
+                            .Select(_sale => new SalesMasterView
+                            {
+                                Id = _sale.Id,
+                                DateTime = _sale.DateTime,
+                                Qnty = _sale.Qnty,
+                                TaxAmount = _sale.Tax,
+                                TotalAmount = _sale.TotalAmount,
+                                Discount = _sale.Discount,
+                                AmountDue = _sale.AmountDue,
+                                AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(pct => pct.Amount)
+                            }).ToArrayAsync();
+
+                return result;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+
         }
         
         [HttpGet("details/{id:int}")]
         public async Task<SalesTransDetailsView> GetSaleDetails(int id)
         {
-            return await DBContext
-                .Sales
-                .Where(s => s.Id == id).Include(s => s.SaleProducts).Include(s => s.PosCartTransactions)
-                .Select(s => new SalesTransDetailsView
-                {
-                    DateTime = s.DateTime,
-                    Qnty = s.Qnty,
-                    TaxAmount = s.Tax,
-                    TotalAmount = s.TotalAmount,
-                    Discount = s.Discount,
-                    AmountDue = s.AmountDue,
-                    AmountPaid = s.PosCartTransactions!.Where(st => st.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(st => st.Amount),
-                    Products = DBmapper.Map<IEnumerable<SaleDetailSelectProductView>>(s.SaleProducts),
-                    Transactions = DBmapper.Map<IEnumerable<SaleDetailTransactionViewModel>>(s.PosCartTransactions)
-                }).FirstAsync();
-        }
-
-        [HttpPost]
-        public async Task PosStart(StartPosDto StartPosDto)
-        {
-            Sale newSale = GetPosStart(StartPosDto);
-            await DBContext.AddAsync(newSale);
-            await DBContext.SaveChangesAsync();
-        }
-
-        private static Sale GetPosStart(StartPosDto StartPosDto)
-        {
-            DateTime timestamp = DateTime.Now;
-
-            Sale sale = new()
+            try
             {
-                DateTime = timestamp,
-                Qnty = StartPosDto.Cart.Quantity,
-                Tax = StartPosDto.Cart.TaxAmount,
-                TotalAmount = StartPosDto.Cart.TotalAmount,
-                Discount = StartPosDto.Cart.DiscountAmount,
-                AmountDue = StartPosDto.Cart.AmountDue,
-                SaleProducts = GetLatestPosProducts(StartPosDto.Cart.Rows, timestamp),
-                PosCartTransactions = GetNewPosCartTransactions(StartPosDto.Payment.PaymentAmount, timestamp)
-            };
+                return await DBContext
+                .Sales
+                .Where(_sale => _sale.Id == id).Include(_sale => _sale.SaleProducts).Include(_sale => _sale.PosCartTransactions)
+                .Select(_sale => new SalesTransDetailsView
+                {
+                    DateTime = _sale.DateTime,
+                    Qnty = _sale.Qnty,
+                    TaxAmount = _sale.Tax,
+                    TotalAmount = _sale.TotalAmount,
+                    Discount = _sale.Discount,
+                    AmountDue = _sale.AmountDue,
+                    AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(pct => pct.Amount),
+                    Products = DBmapper.Map<IEnumerable<SaleDetailSelectProductView>>(_sale.SaleProducts),
+                    Transactions = DBmapper.Map<IEnumerable<SaleDetailTransactionViewModel>>(_sale.PosCartTransactions)
+                }).FirstAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
-            return sale;
+            
         }
 
         private static List<SaleProduct> GetLatestPosProducts(List<CartRow> cartRows, DateTime timestamp)
         {
-            List<SaleProduct> saleProducts = new();
-            foreach (var cartRow in cartRows)
+
+            try
             {
-                for (int i = 0; i < cartRow.Quantity; i++)
+                List<SaleProduct> saleProducts = new();
+                foreach (var cartRow in cartRows)
                 {
-                    saleProducts.Add(new SaleProduct
+                    for (int i = 0; i < cartRow.Quantity; i++)
                     {
-                        DateTime = timestamp,
-                        Barcode = cartRow.Product.Barcode,
-                        ProductName = cartRow.Product.ProductName,
-                        SalePrice = cartRow.Product.SalePrice,
-                        TaxAmount = cartRow.Product.TaxAmount
-                    });
+                        saleProducts.Add(new SaleProduct
+                        {
+                            DateTime = timestamp,
+                            Barcode = cartRow.Product.Barcode,
+                            ProductName = cartRow.Product.ProductName,
+                            SalePrice = cartRow.Product.SalePrice,
+                            TaxAmount = cartRow.Product.TaxAmount
+                        });
+                    }
                 }
+
+                return saleProducts;
+            }
+            catch (Exception)
+            {
+                throw;
             }
 
-            return saleProducts;
+            
         }
 
         private static List<PosCartTransaction> GetNewPosCartTransactions(decimal pAmount, DateTime datetime)
         {
-            return new List<PosCartTransaction>
+            try
+            {
+                var result = new List<PosCartTransaction>
             {
                 new PosCartTransaction
                 {
@@ -133,6 +140,14 @@ namespace ShepherdPOS.Api.Controllers
                     Amount = pAmount
                 }
             };
+
+                return result;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
 
         [HttpPost]
