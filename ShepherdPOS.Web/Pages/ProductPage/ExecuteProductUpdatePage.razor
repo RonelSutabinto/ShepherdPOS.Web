@@ -19,9 +19,11 @@ else
     else
     {
 
-
         <MudCard>
-            <MudForm Model="@product" Validation="@HandleValidSubmit">
+            <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
                 <MudCardContent>
 
                     <label for="ProductCategoryId" class="form-label">Category</label>
@@ -80,12 +82,16 @@ else
 
 
                 <MudCardActions>
-                    @*<button type="submit" class="btn btn-success">Save Record</button>*@
-                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" ButtonType="ButtonType.Submit">Submit</MudButton>
-                </MudCardActions>
-            </MudForm>
+                    <button type="submit" class="btn btn-success">Save Record</button>
 
-        </MudCard>
+                    <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="m-4" Color="Color.Default">Back</MudButton>
+
+                </MudCardActions>
+
+                
+            </EditForm>
+
+</MudCard>
     }
 </MudGrid>
 
@@ -119,6 +125,6 @@ else
         NavigationManager.NavigateTo("product");
 
 
-   
+
 }
 

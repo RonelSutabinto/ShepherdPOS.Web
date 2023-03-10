@@ -4,59 +4,225 @@
 @inject IJSRuntime JsRuntime
 
 <PageTitle>POS</PageTitle>
-<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">POS</MudText>
-<MudText Color="Color.Surface" Class="mb-4">Real time point of sales system </MudText>
+@*<MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-0">POS</MudText>*@
+
+<div class="row ">
+    <div class="col-md-2 g-1 justify-content-start">
+        <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-0">POS</MudText>
+        <MudText  Color="Color.Surface" Class="mb-4 ">Real time point of sales </MudText>
+    </div>
+    <div class="col-md-3 text-end g-1 justify-content-end">
+        <MudText Typo="Typo.h3" Color="Color.Warning" Class="mt-4 mb-0">0</MudText> 
+    </div>
+</div>
 
 <MudGrid>
     <div class="row">
         <div class="col-md-5">
-            <CartItemListPage Cart="cart" OnRemoveProduct="HandleRemoveProduct" OnAddPayment="HandleAddPayment" />
+            @*<CartItemListPage Cart="cart" OnRemoveProduct="HandleRemoveProduct" OnAddPayment="HandleAddPayment" />*@
+            @*=========Add to cart table========================================================*@
+            @if (AddtoCart != null)
+            {
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control" placeholder="Barcode or QR-code scan here" @bind:event="oninput">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div style="height: 330px; overflow-y: scroll;">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product Name</th>
+                                                <th>Price</th>
+                                                <th>Qnty</th>
+                                                <th>Total</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var R in AddtoCart.Rows)
+                                            {
+                                                <tr>
+                                                    <td>@R.Product.ProductName</td>
+                                                    <td>@R.Product.SalePrice</td>
+                                                    <td>@R.Quantity</td>
+                                                    <td>@R.TotalAmount</td>
+                                                    <td class="text-end">
+                                                        <MudIconButton @onclick="() => OnRemoveProduct.InvokeAsync(R.Product)" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" />
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 g-1">
+                        Total
+                    </div>
+                    <div class="col-md-6 text-end g-2">
+                        @string.Format("{0:N2} ", AddtoCart.TotalAmount)
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 g-1">
+                        Tax Amount
+                    </div>
+                    <div class="col-md-6 text-end g-2">
+                        @string.Format("{0:N2}", AddtoCart.TaxAmount)
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 g-1">
+                        Discount
+                    </div>
+                    <div class="col-md-6 text-end g-2">
+                        @string.Format("{0:N2}", 0)
+                    </div>
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-md-4 g-3">
+                        <b>Grand total</b>
+                    </div>
+                    <div class="col-md-6 text-end g-3">
+                        <b>@string.Format(" {0:C} ", AddtoCart.AmountDue)</b>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-md-4 g-4">
+
+                    </div>
+                    <div class="col-md-4 g-2">
+                        <ExecutePaymentBtn AmountDue="AddtoCart.AmountDue"
+                                           OnAddPayment="HandleCartAddPayment"
+                                           ButtonText="Checkout" />
+                    </div>
+                </div>
+
+                <div class="row g-6">
+
+                </div>
+            }
+            @*==================================================================================*@
         </div>
+
+
         <div class="col-md-7">
-            <ProductSelection ProductCategories="allProductCategories" Products="allProducts" OnProductSelect="HandleProductSelect" />
+            @*=========Product thumbnail table display==========================================*@
+            <div class="row justify-content-end">
+                <div class="col-8 mb-3  ">
+                    <input type="text" class="form-control" placeholder="Search by Product Name or Barcode" @bind:event="oninput">
+                </div>
+            </div>
+            <div class="card" style="height: 700px; overflow-y: scroll;">
+                <div class="card-body">
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        @foreach (var product in Products)
+                        {
+                            <div class="col">
+
+                                <div class="card">
+                                    <img class="img-thumbnail" src="@product.ImageURL">
+                                    <div class="card-body">
+
+                                        <MudText Typo="Typo.subtitle1" Class="card-title">
+                                            @product.ProductName
+                                        </MudText>
+
+                                        <p class="card-text">
+                                            <b>@product.SalePrice.ToString("C")</b>
+                                        </p>
+                                        <div>
+                                            <button type="button" @onclick="() => SelectProduct(product)" class="btn btn-link">
+                                                Add Item
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            @*==================================================================================*@
+
         </div>
     </div>
 
 </MudGrid>
-    
-    @code {
-        ProductGroupView[]? allProductCategories;
-        SelectProductView[]? allProducts;
-        ExecuteHandleCartView cart = new();
 
-        protected override async Task OnInitializedAsync()
-        {
-            allProductCategories = await Http.GetFromJsonAsync<ProductGroupView[]>("api/productcategory");
-            allProducts = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
+@code {
+    SelectProductView[]? allProducts;
+    ExecuteHandleCartView cart = new();
 
-        }
+    //object view declaration for product selection==========
+    [Parameter] public SelectProductView[]? Products { get; set; }
+    [Parameter] public EventCallback<SelectProductView> OnProductSelect { get; set; }
+    SelectProductView[]? filteredProducts = null;
 
-        private async Task HandleProductSelect(SelectProductView product)
-        {
-            CartQuantityRequestDto CartQuantityRequestDto = new()
-            {
-                ProductId = product.Id,
-                CartQuantity = cart.ProductQuantity(product.Barcode)
-            };
+    [Parameter] public ExecuteHandleCartView AddtoCart { get; set; }
+    [Parameter] public EventCallback<SelectProductView> OnRemoveProduct { get; set; }
+    [Parameter] public EventCallback<AppendPaymentDto> OnAddPayment { get; set; }
 
-            var response = await Http.PostAsJsonAsync<CartQuantityRequestDto>("api/checkstocksale/request", CartQuantityRequestDto);
-            var canBook = await response.Content.ReadFromJsonAsync<bool>();
-
-            if (canBook)
-                cart.AppendToCart(product);
-            else
-                await JsRuntime.InvokeVoidAsync("alert", "Unable to add to cart, insufficient stock.");
-        }
-
-        private void HandleRemoveProduct(SelectProductView product)
-        {
-            cart.DeleteFromCart(product);
-        }
-
-        private async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto)
-        {
-            StartPosDto StartPosDto = new() { Cart = cart, Payment = AppendPaymentDto };
-            await Http.PostAsJsonAsync<StartPosDto>("api/Sale", StartPosDto);
-            cart = new();
-        }
+    protected override async Task OnInitializedAsync()
+    {
+        allProducts = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
     }
+
+    private async Task HandleProductSelect(SelectProductView product)
+    {
+        CartQuantityRequestDto CartQuantityRequestDto = new()
+        {
+            ProductId = product.Id,
+            CartQuantity = cart.ProductQuantity(product.Barcode)
+        };
+
+        var response = await Http.PostAsJsonAsync<CartQuantityRequestDto>("api/checkstocksale/request", CartQuantityRequestDto);
+        var canBook = await response.Content.ReadFromJsonAsync<bool>();
+
+        if (canBook)
+            cart.AppendToCart(product);
+        else
+            await JsRuntime.InvokeVoidAsync("alert", "Unable to add to cart, insufficient stock.");
+    }
+
+    private void HandleRemoveProduct(SelectProductView product)
+    {
+        cart.DeleteFromCart(product);
+    }
+
+    private async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto)
+    {
+        StartPosDto StartPosDto = new() { Cart = cart, Payment = AppendPaymentDto };
+        await Http.PostAsJsonAsync<StartPosDto>("api/Sale", StartPosDto);
+        cart = new();
+    }
+
+    public string tMountPos(string amount)
+    {
+        return amount;
+    }
+
+    private async Task SelectProduct(SelectProductView product)
+    {
+        await OnProductSelect.InvokeAsync(product);
+    }
+
+    public void HandleApplyDiscount(decimal discountAmount) =>
+        AddtoCart.DiscountAmount = discountAmount;
+
+    public async Task HandleCartAddPayment(AppendPaymentDto AppendPaymentDto) =>
+        await OnAddPayment.InvokeAsync(AppendPaymentDto);
+}

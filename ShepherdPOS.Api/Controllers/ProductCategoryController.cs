@@ -34,51 +34,47 @@ namespace ShepherdPOS.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<ProductGroupView>> Get()
+        public async Task<IEnumerable<ProductGroupView>> GetAll()
         {
-            return await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider)
-                .OrderBy(pc => pc.CategoryName).ToArrayAsync();
+            try
+            {
+                var resutl = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.CategoryName).ToArrayAsync();
+                return resutl;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
 
         [HttpGet("getproductforupdate/{id:int}")]
         public async Task<UpdateProductCategoryDto> getproductforupdate(int id)
         {
-            return await DBContext.ProductCategories.Where(pc => pc.Id == id)
-                .ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
+            try
+            {
+                var resutl = await DBContext.ProductCategories.Where(pc => pc.Id == id).ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
+                return resutl;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         [HttpGet("selecteditemlist")]
         public async Task<IEnumerable<SelectedItemValueDto>> selecteditemlist()
         {
-            return await DBContext
-                .ProductCategories
-                .ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
+            try
+            {
+                var resutl = await DBContext.ProductCategories.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
+                return resutl;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        [HttpPost]
-        public async Task Create(UpdateProductCategoryDto productCategoryDTO)
-        {
-            await DBContext.AddAsync(DBmapper.Map<ProductCategory>(productCategoryDTO));
-            await DBContext.SaveChangesAsync();
-        }
-
-        [HttpPut]
-        public async Task Update(UpdateProductCategoryDto productCategoryDTO)
-        {
-            ProductCategory productCategory = await DBContext.ProductCategories.FindAsync(productCategoryDTO.Id);
-
-            DBmapper.Map(productCategoryDTO, productCategory);
-            DBContext.Update(productCategory);
-            await DBContext.SaveChangesAsync();
-        }
-
-        [HttpDelete("{id:int}")]
-        public async Task Delete(int id)
-        {
-            ProductCategory productCategory = await DBContext.ProductCategories.FindAsync(id);
-
-            DBContext.Remove(productCategory);
-            await DBContext.SaveChangesAsync();
-        }
     }
 }

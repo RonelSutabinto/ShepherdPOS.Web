@@ -48,20 +48,16 @@ namespace ShepherdPOS.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<SelectProductView>> GetAll()
         {
-            return await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.ProductName)
-                .Select(p => new SelectProductView
-                {
-                    Id = p.Id,
-                    Barcode = p.Barcode,
-                    ProductName = p.ProductName,
-                    SalePrice = p.SalePrice,
-                    ImageURL = p.ImageURL,
-                    ProductBand = p.ProductBand,
-                    ProductCategoryId = p.ProductCategoryId,
-                    TaxAmount = p.TaxAmount,
-                    MinimumStock = p.MinimumStock
-                }).ToArrayAsync();
-
+            
+            try
+            {
+                var result = await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.ProductName).ToArrayAsync();
+                return result;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
         }
 
@@ -88,32 +84,33 @@ namespace ShepherdPOS.Api.Controllers
         [HttpGet("getproductforupdate/{id:int}")]
         public async Task<UpdateProductDto> GetProductforUpdate(int id)
         {
-            return await DBContext.Products.Where(pc => pc.Id == id).ProjectTo<UpdateProductDto>(DBmapper.ConfigurationProvider)
-                .Select(p => new UpdateProductDto
-                {
-                    Id = p.Id,
-                    ProductCategoryId = p.ProductCategoryId,
-                    Barcode = p.Barcode,
-                    ProductName = p.ProductName,
-                    Description = p.Description,
-                    SalePrice = p.SalePrice,
-                    TaxAmount = p.TaxAmount,
-                    ProductBand = p.ProductBand,
-                    ImageURL = p.ImageURL,
-                    MinimumStock = p.MinimumStock
-                }).FirstAsync();
-
+            
+            try
+            {
+                var resutl = await DBContext.Products.Where(pc => pc.Id == id).ProjectTo<UpdateProductDto>(DBmapper.ConfigurationProvider).FirstAsync();
+                return resutl;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
 
         [HttpGet("selecteditemlist")]
         public async Task<IEnumerable<SelectedItemValueDto>> SelectedItemlist()
         {
-            return await DBContext.Products.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider)
-                .OrderBy(s => s.Text).ToArrayAsync();
+            try
+            {
+                var resutl = await DBContext.Products.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).OrderBy(s => s.Text).ToArrayAsync();
+                return resutl;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+             
         }
-
-        
 
         
     }
