@@ -5,6 +5,7 @@ namespace ShepherdPOS.Models.Classes
     public class ExecuteHandleCartView
     {
         public List<CartRow> Rows { get; set; }
+        public decimal PostTAmnt { get; set; }
 
         public ExecuteHandleCartView()
         {
@@ -20,9 +21,18 @@ namespace ShepherdPOS.Models.Classes
 
         public decimal AmountDue { get {
                 if (DiscountAmount == 0)
+                {
+                    PostTAmnt = TotalAmount;
                     return TotalAmount;
+                }
+
                 else
-                    return TotalAmount - TotalAmount * DiscountAmount / 100;
+                {
+                    PostTAmnt = TotalAmount - TotalAmount * (DiscountAmount / 100);
+                    return PostTAmnt;
+                }
+
+                    
             }
         }
 

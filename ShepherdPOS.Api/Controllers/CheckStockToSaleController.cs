@@ -45,28 +45,35 @@ namespace ShepherdPOS.Api.Controllers
         [Route("request")]
         public async Task<bool> StockRequest(CartQuantityRequestDto CartQuantityRequestDto)
         {
-            var product = await DBContext.Products.FindAsync(CartQuantityRequestDto.ProductId);
-            var checkStock = DBContext.Stocks.Where(s => s.ProductId == CartQuantityRequestDto.ProductId).Sum(s => s.Quantity);
-            var productSold = DBContext.SaleProducts.Where(s => s.Barcode == product!.Barcode).Count();
-            return checkStock - productSold - CartQuantityRequestDto.CartQuantity > 0 ? true : false;
+
+            try
+            {
+                var productRequest = await DBContext.Products.FindAsync(CartQuantityRequestDto.ProductId);
+                var checkStockRequest = DBContext.Stocks.Where(s => s.ProductId == CartQuantityRequestDto.ProductId).Sum(s => s.Quantity);
+                var totalProductSoldRequest = DBContext.SaleProducts.Where(s => s.Barcode == product!.Barcode).Count();
+                return checkStockRequest - totalProductSoldRequest - CartQuantityRequestDto.CartQuantity > 0 ? true : false;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         [HttpGet]
         public async Task<IEnumerable<ProductStockView>> GetAll()
         {
-            var checkRecords = await (from p in DBContext.Products
+            var checkRecordsRequest = await (from p in DBContext.Products.OrderBy(vm => vm.IsMinimumStock).ThenBy(vm => vm.ProductName)
                                       select new ProductStockView
                                       { ProductId = p.Id, ProductName = p.ProductName,ProductStockAdded = (
                                             (from s in DBContext.Stocks where s.ProductId == p.Id select s.Quantity).Sum()
                                           ),
-                                          ProductSold = (
-                                            (from s in DBContext.SaleProducts where s.Barcode == p.Barcode select s).Count()
+                                          totalProductSoldRequest = ( (from s in DBContext.SaleProducts where s.Barcode == p.Barcode select s).Count()
                                           ),
                                           RequiredOrderStockValue = p.MinimumStock
                                       }).ToArrayAsync();
 
 
-            return checkRecords.OrderBy(vm => vm.IsMinimumStock).ThenBy(vm => vm.ProductName);
+            return checkRecordsRequest;
         }
 
         
