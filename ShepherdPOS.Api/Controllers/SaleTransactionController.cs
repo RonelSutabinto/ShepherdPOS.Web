@@ -53,7 +53,7 @@ namespace ShepherdPOS.Api.Controllers
                                 TotalAmount = _sale.TotalAmount,
                                 Discount = _sale.Discount,
                                 AmountDue = _sale.AmountDue,
-                                AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(pct => pct.Amount)
+                                AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.PurchasePayment.ToString()).Sum(pct => pct.Amount)
                             }).ToArrayAsync();
 
                 return result;
@@ -82,7 +82,7 @@ namespace ShepherdPOS.Api.Controllers
                     TotalAmount = _sale.TotalAmount,
                     Discount = _sale.Discount,
                     AmountDue = _sale.AmountDue,
-                    AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.Payment.ToString()).Sum(pct => pct.Amount),
+                    AmountPaid = _sale.PosCartTransactions!.Where(pct => pct.PaymentType == PosCartTransactionType.PurchasePayment.ToString()).Sum(pct => pct.Amount),
                     Products = DBmapper.Map<IEnumerable<SaleDetailSelectProductView>>(_sale.SaleProducts),
                     Transactions = DBmapper.Map<IEnumerable<SaleDetailTransactionViewModel>>(_sale.PosCartTransactions)
                 }).FirstAsync();
@@ -135,7 +135,7 @@ namespace ShepherdPOS.Api.Controllers
                 new PosCartTransaction
                 {
                     DateTime = datetime,
-                    PaymentType = PosCartTransactionType.Payment.ToString(),
+                    PaymentType = PosCartTransactionType.PurchasePayment.ToString(),
                     Amount = pAmount
                 }
             };
@@ -157,7 +157,7 @@ namespace ShepherdPOS.Api.Controllers
             {
                 SaleId = AppendPaymentDto.SaleId,
                 DateTime = DateTime.Now,
-                PaymentType = PosCartTransactionType.Payment.ToString(),
+                PaymentType = PosCartTransactionType.PurchasePayment.ToString(),
                 Amount = AppendPaymentDto.PaymentAmount
             };
             await DBContext.AddAsync(PosCartTransaction);

@@ -2,7 +2,8 @@
 {
     public enum PosCartTransactionType
     {
-        Payment,
-        Refund
+        PurchasePayment,
+        PurchaseCancel,
+        PurchaseRefund,
     }
 }
