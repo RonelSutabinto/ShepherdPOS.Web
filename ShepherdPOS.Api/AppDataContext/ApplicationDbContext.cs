@@ -1,4 +1,12 @@
-﻿using Duende.IdentityServer.EntityFramework.Options;
+﻿//=====================================================================================================================================================
+//This part of the code was using DbSet. From Entity Framework Core of C#==============================================================================
+//The DbSet class makes available methods that provide the capability to carry out CRUD operations on entities.========================================
+//=====================================================================================================================================================
+//=Try this link for more detailshttps://www.learnentityframeworkcore.com/dbset========================================================================
+//=====================================================================================================================================================
+
+
+using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -8,8 +16,7 @@ namespace ShepherdPOS.Api.AppDataContext
 {
     public class ApplicationDbContext : ApiAuthorizationDbContext<AppLogger>
     {
-        public ApplicationDbContext( DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
-        {
+        public ApplicationDbContext( DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions){
         }
 
         public DbSet<Sale> Sales { get; set; }
