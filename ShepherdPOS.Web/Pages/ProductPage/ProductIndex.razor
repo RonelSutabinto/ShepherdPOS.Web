@@ -11,16 +11,7 @@
     <MudItem xs="12" sm="6" md="3">
         <MudButton @onclick="Create" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowDownward" class="btn btn-success" Color="Color.Primary">Add New Product</MudButton>
     </MudItem>
-
-
-
    
-    @if (products == null)
-    {
-        <Loader />
-    }
-    else
-    {
         <table class="table">
             <thead>
                 <tr>
@@ -51,10 +42,6 @@
                 }
             </tbody>
         </table>
-    }
-
-
-
 
 </MudGrid>
 
@@ -77,11 +64,9 @@
     private async Task Get() =>
         products = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
 
-    private void Create() =>
-        NavigationManager.NavigateTo("product/create");
+    private void Create() => NavigationManager.NavigateTo("product/create");
 
-    private void Edit(int id) =>
-        NavigationManager.NavigateTo($"product/edit/{id}");
+    private void Edit(int id) => NavigationManager.NavigateTo($"product/edit/{id}");
 
     private async Task Delete(int id, string name)
     {

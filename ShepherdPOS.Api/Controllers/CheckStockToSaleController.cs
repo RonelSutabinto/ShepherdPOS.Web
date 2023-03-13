@@ -49,8 +49,8 @@ namespace ShepherdPOS.Api.Controllers
             try
             {
                 var productRequest = await DBContext.Products.FindAsync(CartQuantityRequestDto.ProductId);
-                var checkStockRequest = DBContext.Stocks.Where(s => s.ProductId == CartQuantityRequestDto.ProductId).Sum(s => s.Quantity);
-                var totalProductSoldRequest = DBContext.SaleProducts.Where(s => s.Barcode == product!.Barcode).Count();
+                var checkStockRequest = DBContext.Stocks.Where(stock => stock.ProductId == CartQuantityRequestDto.ProductId).Sum(qnty => qnty.Quantity);
+                var totalProductSoldRequest = DBContext.SaleProducts.Where(sales => sales.Barcode == product!.Barcode).Count();
                 return checkStockRequest - totalProductSoldRequest - CartQuantityRequestDto.CartQuantity > 0 ? true : false;
             }
             catch (Exception)
@@ -62,18 +62,23 @@ namespace ShepherdPOS.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<ProductStockView>> GetAll()
         {
-            var checkRecordsRequest = await (from p in DBContext.Products.OrderBy(vm => vm.IsMinimumStock).ThenBy(vm => vm.ProductName)
-                                      select new ProductStockView
-                                      { ProductId = p.Id, ProductName = p.ProductName,ProductStockAdded = (
-                                            (from s in DBContext.Stocks where s.ProductId == p.Id select s.Quantity).Sum()
-                                          ),
-                                          totalProductSoldRequest = ( (from s in DBContext.SaleProducts where s.Barcode == p.Barcode select s).Count()
-                                          ),
-                                          RequiredOrderStockValue = p.MinimumStock
-                                      }).ToArrayAsync();
+            try
+            {
+                var checkRecordsRequest = await (from product in DBContext.Products.OrderBy(mvs => vm.IsMinimumStock).ThenBy(mvs => mvs.ProductName)
+                                        select new ProductStockView
+                                        { 
+                                            ProductId = product.Id, ProductName = product.ProductName,ProductStockAdded = ( (from stock in DBContext.Stocks where stock.ProductId == product.Id select stock.Quantity).Sum()),
+                                            totalProductSoldRequest = ( (from sales in DBContext.SaleProducts where sales.Barcode == product.Barcode select sales).Count()),
+                                            RequiredOrderStockValue = product.MinimumStock
+                                        }).ToArrayAsync();
 
 
-            return checkRecordsRequest;
+                return checkRecordsRequest;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         

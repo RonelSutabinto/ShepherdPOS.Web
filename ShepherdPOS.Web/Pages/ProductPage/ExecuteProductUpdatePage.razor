@@ -51,7 +51,6 @@ else
                                   For="@(() => product!.Description)"
                                   Immediate="true"
                                   Label="Product Description" />
-
                 </MudCardContent>
 
                 <MudCardContent>
@@ -121,8 +120,7 @@ else
         NavigationManager.NavigateTo("product");
     }
 
-    private void Back() =>
-        NavigationManager.NavigateTo("product");
+    private void Back() => NavigationManager.NavigateTo("product");
 
 
 

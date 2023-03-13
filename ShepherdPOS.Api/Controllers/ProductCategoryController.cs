@@ -38,7 +38,7 @@ namespace ShepherdPOS.Api.Controllers
         {
             try
             {
-                var resutl = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.CategoryName).ToArrayAsync();
+                var resutl = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pcategory => pcategory.CategoryName).ToArrayAsync();
                 return resutl;
             }
             catch (Exception)
@@ -53,7 +53,7 @@ namespace ShepherdPOS.Api.Controllers
         {
             try
             {
-                var resutl = await DBContext.ProductCategories.Where(pc => pc.Id == id).ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
+                var resutl = await DBContext.ProductCategories.Where(pcategory => pcategory.Id == id).ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
                 return resutl;
             }
             catch (Exception)

@@ -23,11 +23,11 @@ namespace ShepherdPOS.Api.Controllers
 
             var totalSales = DBContext.Sales.Sum(s => s.AmountDue);
 
-            var totalItemsSold = DBContext.SaleProducts.Select(p => p.Barcode).Distinct().Count();
+            var totalItemsSold = DBContext.SaleProducts.Select(product => product.Barcode).Distinct().Count();
 
             var totalItems = DBContext.Products.Count();
 
-            Decimal AccumulatedProfit = DBContext.Sales.Sum(s => s.AmountDue) * 3 ;
+            Decimal AccumulatedProfit = DBContext.Sales.Sum(sales => sales.AmountDue) * 3 ;
 
 
             return new MainPanelView {

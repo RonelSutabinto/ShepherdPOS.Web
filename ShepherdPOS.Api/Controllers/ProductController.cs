@@ -51,7 +51,7 @@ namespace ShepherdPOS.Api.Controllers
             
             try
             {
-                var result = await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.ProductName).ToArrayAsync();
+                var result = await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(product => product.ProductName).ToArrayAsync();
                 return result;
             }
             catch (Exception)
@@ -87,7 +87,7 @@ namespace ShepherdPOS.Api.Controllers
             
             try
             {
-                var resutl = await DBContext.Products.Where(pc => pc.Id == id).ProjectTo<UpdateProductDto>(DBmapper.ConfigurationProvider).FirstAsync();
+                var resutl = await DBContext.Products.Where(product => product.Id == id).ProjectTo<UpdateProductDto>(DBmapper.ConfigurationProvider).FirstAsync();
                 return resutl;
             }
             catch (Exception)
@@ -102,7 +102,7 @@ namespace ShepherdPOS.Api.Controllers
         {
             try
             {
-                var resutl = await DBContext.Products.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).OrderBy(s => s.Text).ToArrayAsync();
+                var resutl = await DBContext.Products.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).OrderBy(product => product.Text).ToArrayAsync();
                 return resutl;
             }
             catch (Exception)

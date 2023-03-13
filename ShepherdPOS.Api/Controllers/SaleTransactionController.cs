@@ -101,17 +101,17 @@ namespace ShepherdPOS.Api.Controllers
             try
             {
                 List<SaleProduct> saleProducts = new();
-                foreach (var cartRow in cartRows)
+                foreach (var _row in cartRows)
                 {
                     for (int i = 0; i < cartRow.Quantity; i++)
                     {
                         saleProducts.Add(new SaleProduct
                         {
                             DateTime = timestamp,
-                            Barcode = cartRow.Product.Barcode,
-                            ProductName = cartRow.Product.ProductName,
-                            SalePrice = cartRow.Product.SalePrice,
-                            TaxAmount = cartRow.Product.TaxAmount
+                            Barcode = _row.Product.Barcode,
+                            ProductName = _row.Product.ProductName,
+                            SalePrice = _row.Product.SalePrice,
+                            TaxAmount = _row.Product.TaxAmount
                         });
                     }
                 }
