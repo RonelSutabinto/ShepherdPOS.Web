@@ -6,6 +6,7 @@ namespace ShepherdPOS.Models.ViewModels
     {
         public int Id { get; set; }
 
+        [Required]
         public int ProductCategoryId { get; set; }
 
         public string Barcode { get; set; } = string.Empty;
@@ -18,6 +19,7 @@ namespace ShepherdPOS.Models.ViewModels
         [Column(TypeName = "decimal(10,2)")]
         public decimal TaxAmount { get; set; }
 
+        [Required]
         public int MinimumStock { get; set; }
 
         public string ProductBand { get; set; } = string.Empty;

@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
 
-        public string? CategoryName { get; set; }
+        [Required]
+        public string CategoryName { get; set; }
     }
 }

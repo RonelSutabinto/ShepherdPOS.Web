@@ -6,6 +6,7 @@ namespace ShepherdPOS.Models.DataTObject
     {
         public AppendPaymentDto(decimal amountDue) { AmountDue = amountDue; }
 
+        [Column(TypeName = "decimal(18,2)")]
         public decimal AmountDue { get; set; }
 
         public decimal LeftToPay { get { return AmountDue - PaymentAmount; } }

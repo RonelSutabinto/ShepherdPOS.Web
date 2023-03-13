@@ -6,6 +6,7 @@ namespace ShepherdPOS.Models.ViewModels
     {
         public DateTime DateTime { get; set; }
 
+        [Required]
         public int Qnty { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
