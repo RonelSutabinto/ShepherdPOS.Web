@@ -188,40 +188,30 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Blazored.LocalStorage": {
+            "Blazored.Modal": {
               "target": "Package",
-              "version": "[4.1.4, )"
+              "version": "[7.1.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[6.0.13, )"
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.13, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "Microsoft.Extensions.Localization": {
-              "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[7.0.1, )"
             },
             "MudBlazor": {
               "target": "Package",
               "version": "[6.1.8, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[10.0.1, )"
             }
           },
           "imports": [

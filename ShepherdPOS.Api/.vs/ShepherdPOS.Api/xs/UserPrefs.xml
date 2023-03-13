@@ -1,39 +1,22 @@
 ﻿<Properties StartupConfiguration="{746A8DEC-2486-4F0C-BCA1-A452F01D7D39}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppDataContext/ApplicationDbContext.cs">
     <Files>
-      <File FileName="../ShepherdPOS.Web/Shared/Loader.razor" Line="1" Column="1" />
-      <File FileName="../ShepherdPOS.Web/Pages/PosPage/ProductSelection.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/PosPage/CartItemListPage.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/PosPage/ExecutePaymentBtn.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/PosPage/Pos.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/PosPage/ExecutePayment.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/ProductPage/ExecuteProductUpdatePage.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/ProductPage/ProductIndex.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/Counter.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/FetchData.razor" />
-      <File FileName="../ShepherdPOS.Web/Pages/Index.razor" />
-      <File FileName="../ShepherdPOS.Web/Properties/launchSettings.json" />
-      <File FileName="../ShepherdPOS.Web/_Imports.razor" Line="1" Column="1" />
       <File FileName="../ShepherdPOS.Web/Program.cs" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="AppDataContext/ApplicationDbContext.cs" Line="9" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ShepherdPOS.Api" expanded="True">
-            <Node name="ShepherdPOS.Api" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="ShepherdPOS.Api" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

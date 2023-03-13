@@ -1,29 +1,23 @@
-﻿using Microsoft.AspNetCore.Components.Web;
+﻿using Blazored.Modal;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ShepherdPOS.Web;
-
-using Blazored.LocalStorage;
-using ShepherdPOS.Web.Services;
-using ShepherdPOS.Web.Services.Interface;
 using MudBlazor.Services;
-using ShepherdPOS.Web.Shared;
-//using Radzen;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) }); Temporarily disable this statement blazor loader 7282
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7282/") });
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IPosCartService, PosCartService>();
+builder.Services.AddHttpClient("ShepherdPOS.ApiAPI", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+   // .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 
-builder.Services.AddBlazoredLocalStorage();
+// Supply HttpClient instances that include access tokens when making requests to the server project
+builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("ShepherdPOS.ApiAPI"));
+
+builder.Services.AddApiAuthorization();
+
+builder.Services.AddBlazoredModal();
 builder.Services.AddMudServices();
 
-builder.Services.AddScoped<IManageProductsLocalStorageService, ManageProductsLocalStorageService>();
-builder.Services.AddScoped<IManageCartItemsLocalStorageService, ManageCartItemsLocalStorageService>();
-
-
 await builder.Build().RunAsync();
-

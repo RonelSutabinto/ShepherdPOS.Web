@@ -1,0 +1,7 @@
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.AssemblyInfo.cs
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/ronelsutabinto/Desktop/Source Code Capstone/REPO/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.MvcApplicationPartsAssemblyInfo.cache
