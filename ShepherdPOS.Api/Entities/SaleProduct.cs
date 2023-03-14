@@ -7,11 +7,13 @@ namespace ShepherdPOS.Api.Entities
     {
         public int Id { get; set; }
 
+        [Reuired]
         public int SaleId { get; set; }
 
         public DateTime DateTime { get; set; }
 
-        public string Barcode { get; set; } = string.Empty;
+        [Reuired]
+        public string Barcode { get; set; } 
 
         public string ProductName { get; set; } = string.Empty;
 

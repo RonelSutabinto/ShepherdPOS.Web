@@ -7,6 +7,7 @@ namespace ShepherdPOS.Api.Entities
     {
         public int Id { get; set; }
 
+        [Reuired]
         public int ProductCategoryId { get; set; }
 
         public string Barcode { get; set; } = string.Empty;
@@ -21,6 +22,7 @@ namespace ShepherdPOS.Api.Entities
         [Column(TypeName = "decimal(18,2)")]
         public decimal TaxAmount { get; set; }
 
+        [Reuired]
         public int MinimumStock { get; set; }
 
         public string ProductBand { get; set; } = string.Empty;
