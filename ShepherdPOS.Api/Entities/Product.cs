@@ -1,4 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿
+//==============================================================================================================================
+//Creates Product Entity Data Model for the ShepherdPO database ================================================================
+//===Implementing Entity Framework linkhttps://www.entityframeworktutorial.net/entity-relationships.aspx========================
+//==============================================================================================================================
+
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShepherdPOS.Api.Entities
@@ -7,7 +13,6 @@ namespace ShepherdPOS.Api.Entities
     {
         public int Id { get; set; }
 
-        [Reuired]
         public int ProductCategoryId { get; set; }
 
         public string Barcode { get; set; } = string.Empty;
@@ -22,10 +27,9 @@ namespace ShepherdPOS.Api.Entities
         [Column(TypeName = "decimal(18,2)")]
         public decimal TaxAmount { get; set; }
 
-        [Reuired]
         public int MinimumStock { get; set; }
 
-        public string ProductBand { get; set; } = string.Empty;
+        //public string ProductBand { get; set; } = string.Empty;
 
         public string ImageURL { get; set; } = string.Empty;
 

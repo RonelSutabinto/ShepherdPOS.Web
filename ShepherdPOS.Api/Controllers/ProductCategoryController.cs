@@ -5,6 +5,7 @@
 //the complexity of your database searches======================================================================================
 //==Try this link for more detailshttps://dev.to/cloudx/entity-framework-core-simplify-your-queries-with-automapper-3m8k========
 //=============Another link Tutorialhttps://tech.playgokids.com/auto-mapper-net6/===============================================
+//========Linq codinghttps://www.entityframeworktutorial.net/querying-entity-graph-in-entity-framework.aspx=====================
 //==============================================================================================================================
 
 using ShepherdPOS.Api.AppDataContext;
@@ -26,7 +27,7 @@ namespace ShepherdPOS.Api.Controllers
         readonly IMapper DBmapper;
         readonly ILogger<ProductCategoryController> Applogger;
 
-        public ProductCategoryController(ApplicationDbContext context,IMapper mapper,ILogger<ProductCategoryController> logger)
+        public ProductCategoryController(ApplicationDbContext context, IMapper mapper, ILogger<ProductCategoryController> logger)
         {
             DBContext = context;
             DBmapper = mapper;
@@ -36,16 +37,18 @@ namespace ShepherdPOS.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<ProductGroupView>> GetAll()
         {
+
             try
             {
-                var resutl = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pcategory => pcategory.CategoryName).ToArrayAsync();
-                return resutl;
+                var result = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.CategoryName).ToArrayAsync();
+                return result;
             }
             catch (Exception)
             {
                 throw;
             }
-            
+
+
         }
 
         [HttpGet("getproductforupdate/{id:int}")]
@@ -53,8 +56,8 @@ namespace ShepherdPOS.Api.Controllers
         {
             try
             {
-                var resutl = await DBContext.ProductCategories.Where(pcategory => pcategory.Id == id).ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
-                return resutl;
+                var result = await DBContext.ProductCategories.Where(pc => pc.Id == id).ProjectTo<UpdateProductCategoryDto>(DBmapper.ConfigurationProvider).FirstAsync();
+                return result;
             }
             catch (Exception)
             {
@@ -65,16 +68,19 @@ namespace ShepherdPOS.Api.Controllers
         [HttpGet("selecteditemlist")]
         public async Task<IEnumerable<SelectedItemValueDto>> selecteditemlist()
         {
+
             try
             {
-                var resutl = await DBContext.ProductCategories.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
-                return resutl;
+                var result = await DBContext.ProductCategories.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
+                return result;
             }
             catch (Exception)
             {
                 throw;
             }
+
         }
+
 
     }
 }

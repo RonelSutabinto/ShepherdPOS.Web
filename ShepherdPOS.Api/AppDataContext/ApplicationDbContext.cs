@@ -1,4 +1,6 @@
-﻿//=====================================================================================================================================================
+﻿
+
+//=====================================================================================================================================================
 //This part of the code was using DbSet. From Entity Framework Core of C#==============================================================================
 //The DbSet class makes available methods that provide the capability to carry out CRUD operations on entities.========================================
 //=====================================================================================================================================================
@@ -16,7 +18,8 @@ namespace ShepherdPOS.Api.AppDataContext
 {
     public class ApplicationDbContext : ApiAuthorizationDbContext<AppLogger>
     {
-        public ApplicationDbContext( DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions){
+        public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
+        {
         }
 
         public DbSet<Sale> Sales { get; set; }
@@ -30,8 +33,8 @@ namespace ShepherdPOS.Api.AppDataContext
         public DbSet<SaleProduct> SaleProducts { get; set; }
 
         public DbSet<Stock> Stocks { get; set; }
-        
-        
-        
+
+
+
     }
 }

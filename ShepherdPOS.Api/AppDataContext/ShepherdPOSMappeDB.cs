@@ -18,7 +18,7 @@ namespace ShepherdPOS.Api.Classes
     {
         public ShepherdPOSMappeDB()
         {
-          
+           
             CreateMap<Product, SelectProductView>();
 
             CreateMap<Product, UpdateProductDto>().ReverseMap();
@@ -28,8 +28,6 @@ namespace ShepherdPOS.Api.Classes
             CreateMap<SaleProduct, SaleDetailSelectProductView>();
 
             CreateMap<PosCartTransaction, SaleDetailTransactionViewModel>();
-
-            CreateMap<ProductCategory, UpdateProductCategoryDto>().ReverseMap();
 
             CreateMap<Product, SelectedItemValueDto>().ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.ProductName)).ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Id));
         }

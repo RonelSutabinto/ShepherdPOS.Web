@@ -2,8 +2,8 @@
 ===The idea behind this code is applied to the looping through model elements that are done in ASP.Net Core Razor Pages.===============
 =======================================================================================================================================
 ==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
+==For NavigationManager, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.==============================
 ======================================================================================================================================*@
-
 
 @page "/sales"
 @inject HttpClient Http
@@ -14,12 +14,7 @@
 <MudText Color="Color.Surface" Class="mb-4">View sales records by date covered </MudText>
 
 <MudGrid>
-    @if (sales == null)
-    {
-        <Loader />
-    }
-    else
-    {
+   
         <table class="table">
             <thead>
                 <tr>
@@ -53,9 +48,9 @@
                 }
             </tbody>
         </table>
-    }
+   
 </MudGrid>
-    
+
 
 @code {
 

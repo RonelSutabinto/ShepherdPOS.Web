@@ -1,4 +1,11 @@
-﻿@page "/product/create"
+﻿@*========================================================================================================================================
+===The idea of this code was applied NavigationManager that the URL is inserted into the browser's navigation history=================
+=======================================================================================================================================
+==For more details, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.===================================
+======================================================================================================================================*@
+
+
+@page "/product/create"
 @page "/product/edit/{Id:int}"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
@@ -14,84 +21,84 @@ else
 <MudText Color="Color.Surface" Class="mb-4">Create, update and delete products </MudText>
 
 <MudGrid>
-    @if (productCategories == null && product == null)
-    {<Loader /> }
-    else
-    {
 
-        <MudCard>
-            <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
-                <DataAnnotationsValidator />
-                <ValidationSummary />
+    <MudCard>
+        <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
 
-                <MudCardContent>
+            <MudCardContent>
 
-                    <label for="ProductCategoryId" class="form-label">Category</label>
-                    <InputSelect id="ProductCategoryId" @bind-Value="product.ProductCategoryId" class="form-control">
-                        @foreach (var category in productCategories!)
-                        {
-                            <option value="@category.Value">@category.Text</option>
-                        }
-                    </InputSelect>
+                <label for="ProductCategoryId" class="form-label">Category</label>
+                <InputSelect id="ProductCategoryId" @bind-Value="product.ProductCategoryId" class="form-control">
+                    @foreach (var category in productCategories!)
+                    {
+                        <option value="@category.Value">@category.Text</option>
+                    }
+                </InputSelect>
 
-                    <MudTextField @bind-Value="product.Barcode"
-                                  For="@(() => product.Barcode)"
-                                  Immediate="true"
-                                  Label="Barcode" />
+                <MudTextField @bind-Value="product.Barcode"
+                              For="@(() => product.Barcode)"
+                              Immediate="true"
+                              Label="Barcode" />
 
-                    <MudTextField @bind-Value="product.ProductName"
-                                  For="@(() => product.ProductName)"
-                                  Immediate="true"
-                                  Label="Product Name" />
-
-                </MudCardContent>
-
-                <MudCardContent>
-                    <MudTextField @bind-Value="product!.Description"
-                                  For="@(() => product!.Description)"
-                                  Immediate="true"
-                                  Label="Product Description" />
-                </MudCardContent>
-
-                <MudCardContent>
-                    <MudTd DataLabel="Price">
-                        <MudForm Model="@product">
-                            <MudNumericField Label="Sale Price"
-                                             @bind-Value="product.SalePrice"
-                                             For="(() => product.SalePrice)" />
-                        </MudForm>
-                    </MudTd>
-                    <MudTd DataLabel="Tax">
-                        <MudForm Model="@product">
-                            <MudNumericField Label="Tax Amount"
-                                             @bind-Value="product.TaxAmount"
-                                             For="(() => product.TaxAmount)" />
-                        </MudForm>
-                    </MudTd>
-
-                    <MudTd DataLabel="Minimum">
-                        <MudForm Model="@product">
-                            <MudNumericField Label="Minimum Stock Value"
-                                             @bind-Value="product.MinimumStock"
-                                             For="(() => product.MinimumStock)" />
-                        </MudForm>
-                    </MudTd>
-
-                </MudCardContent>
+                <MudTextField @bind-Value="product.ProductName"
+                              For="@(() => product.ProductName)"
+                              Immediate="true"
+                              Label="Product Name" />
 
 
-                <MudCardActions>
-                    <button type="submit" class="btn btn-success">Save Record</button>
 
-                    <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="m-4" Color="Color.Default">Back</MudButton>
+            </MudCardContent>
 
-                </MudCardActions>
+            <MudCardContent>
+                <MudTextField @bind-Value="product!.Description"
+                              For="@(() => product!.Description)"
+                              Immediate="true"
+                              Label="Product Description" />
 
-                
-            </EditForm>
+            </MudCardContent>
 
-</MudCard>
-    }
+
+            <MudCardContent>
+                <MudTd DataLabel="Price">
+                    <MudForm Model="@product">
+                        <MudNumericField Label="Sale Price"
+                                         @bind-Value="product.SalePrice"
+                                         For="(() => product.SalePrice)" />
+                    </MudForm>
+                </MudTd>
+                <MudTd DataLabel="Tax">
+                    <MudForm Model="@product">
+                        <MudNumericField Label="Tax Amount"
+                                         @bind-Value="product.TaxAmount"
+                                         For="(() => product.TaxAmount)" />
+                    </MudForm>
+                </MudTd>
+
+                <MudTd DataLabel="Minimum">
+                    <MudForm Model="@product">
+                        <MudNumericField Label="Minimum Stock Value"
+                                         @bind-Value="product.MinimumStock"
+                                         For="(() => product.MinimumStock)" />
+                    </MudForm>
+                </MudTd>
+
+            </MudCardContent>
+
+
+            <MudCardActions>
+                <button type="submit" class="btn btn-success">Save Record</button>
+
+                <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="m-4" Color="Color.Default">Back</MudButton>
+
+            </MudCardActions>
+
+
+        </EditForm>
+
+    </MudCard>
+
 </MudGrid>
 
 @code {
@@ -120,7 +127,8 @@ else
         NavigationManager.NavigateTo("product");
     }
 
-    private void Back() => NavigationManager.NavigateTo("product");
+    private void Back() =>
+        NavigationManager.NavigateTo("product");
 
 
 

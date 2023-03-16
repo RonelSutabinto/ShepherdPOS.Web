@@ -1,0 +1,113 @@
+﻿@*=====================================================================================================================================
+===The idea behind this code is applied to the looping through view model elements that are done in ASP.Net Core Razor Pages.==========
+=======================================================================================================================================
+==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
+======================================================================================================================================*@
+
+@if (Cart != null)
+{
+    <div class="row">
+        <div class="col-12 mb-3">
+            <input type="text" class="form-control" placeholder="Barcode or QR-code scan here" @bind:event="oninput">
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <div style="height: 330px; overflow-y: scroll;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Qnty</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var R in Cart.Rows)
+                                {
+                                    <tr>
+                                        <td>@R.Product.ProductName</td>
+                                        <td>@R.Product.SalePrice</td>
+                                        <td>@R.Quantity</td>
+                                        <td>@R.TotalAmount</td>
+                                        <td class="text-end">
+                                            <MudIconButton @onclick="() => OnRemoveProduct.InvokeAsync(R.Product)" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" />
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-4 g-1">
+            Total
+        </div>
+        <div class="col-md-6 text-end g-2">
+            @string.Format("{0:N2} ", Cart.TotalAmount)
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-4 g-1">
+            Tax Amount
+        </div>
+        <div class="col-md-6 text-end g-2">
+            @string.Format("{0:N2}", Cart.TaxAmount)
+        </div>
+    </div>
+
+    <div class="row justify-content-end">
+        <div class="col-md-4 g-1">
+            Discount
+        </div>
+        <div class="col-md-6 text-end g-2">
+            @string.Format("{0:N2}", 0)
+        </div>
+    </div>
+
+    <div class="row justify-content-end">
+        <div class="col-md-4 g-3">
+            <b>Grand total</b>
+        </div>
+        <div class="col-md-6 text-end g-3">
+            <b>@string.Format(" {0:C} ", Cart.AmountDue)</b>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-4 g-4">
+
+        </div>
+        <div class="col-md-4 g-2">
+            <ExecutePaymentBtn AmountDue="Cart.AmountDue"
+                               OnAddPayment="HandleAddPayment"
+                               ButtonText="Checkout" />
+        </div>
+    </div>
+
+    <div class="row g-6">
+
+    </div>
+
+}
+
+@code {
+    [Parameter] public ExecuteHandleCartView Cart { get; set; }
+    [Parameter] public EventCallback<SelectProductView> OnRemoveProduct { get; set; }
+    [Parameter] public EventCallback<AppendPaymentDto> OnAddPayment { get; set; }
+
+    public void HandleApplyDiscount(decimal discountAmount) =>
+        Cart.DiscountAmount = discountAmount;
+
+    public async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto) =>
+        await OnAddPayment.InvokeAsync(AppendPaymentDto);
+
+
+}

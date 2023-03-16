@@ -1,30 +1,30 @@
-﻿@if (AppendPaymentDto == null)
-{
-    <Loader />
-}
-else
-{
+﻿@*==========================================================================================================================================================
+===Used modal component to view model elements from dto model lirary reference project ======================================================================
+==============================================================================================================================================================
+==For more details, try this linkhttps://www.c-sharpcorner.com/article/creating-your-first-modal-pop-up-custom-component-using-blazor-web-assembly-and/========
+============================================================================================================================================================*@
+
+<p>
+    Amount Due: @AppendPaymentDto.AmountDue
+</p>
+
+<EditForm Model="@AppendPaymentDto" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label for="PaymentAmount" class="form-label">Payment Amount</label>
+        <InputNumber id="PaymentAmount" @bind-Value="AppendPaymentDto!.PaymentAmount" class="form-control" />
+    </div>
+
     <p>
-        Amount Due: @AppendPaymentDto.AmountDue
+        Left to Pay: @AppendPaymentDto.LeftToPay
     </p>
 
-    <EditForm Model="@AppendPaymentDto" OnValidSubmit="@HandleValidSubmit">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
+    <button type="button" @onclick="() => BlazoredModalInstance.CancelAsync()" class="btn btn-secondary">Cancel</button>
+    <button type="submit" class="btn btn-success">Add Payment</button>
+</EditForm>
 
-        <div class="mb-3">
-            <label for="PaymentAmount" class="form-label">Payment Amount</label>
-            <InputNumber id="PaymentAmount" @bind-Value="AppendPaymentDto!.PaymentAmount" class="form-control" />
-        </div>
-
-        <p>
-            Left to Pay: @AppendPaymentDto.LeftToPay
-        </p>
-
-        <button type="button" @onclick="() => BlazoredModalInstance.CancelAsync()" class="btn btn-secondary">Cancel</button>
-        <button type="submit" class="btn btn-success">Add Payment</button>
-    </EditForm>
-}
 
 @code {
     [CascadingParameter] BlazoredModalInstance BlazoredModalInstance { get; set; } = default!;
@@ -32,9 +32,7 @@ else
 
     AppendPaymentDto? AppendPaymentDto;
 
-    protected override void OnInitialized() =>
-        AppendPaymentDto = new(AmountDue) { PaymentAmount = AmountDue };
+    protected override void OnInitialized() => AppendPaymentDto = new(AmountDue) { PaymentAmount = AmountDue };
 
-    public async Task HandleValidSubmit() =>
-        await BlazoredModalInstance.CloseAsync(ModalResult.Ok(AppendPaymentDto));
+    public async Task HandleValidSubmit() => await BlazoredModalInstance.CloseAsync(ModalResult.Ok(AppendPaymentDto));
 }

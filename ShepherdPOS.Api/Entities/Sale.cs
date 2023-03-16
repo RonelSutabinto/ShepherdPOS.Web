@@ -1,4 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿
+//==============================================================================================================================
+//Creates Sale Entity Data Model for the ShepherdPO database ===================================================================
+//===Implementing Entity Framework linkhttps://www.entityframeworktutorial.net/entity-relationships.aspx========================
+//==============================================================================================================================
+
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,9 +13,11 @@ namespace ShepherdPOS.Api.Entities
     [Table("Sales", Schema = "dbo")]
     public class Sale
     {
-     
+
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Required date and time.")]
+        [DataType(DataType.DateTime)]
         public DateTime DateTime { get; set; }
 
         [Required]
@@ -31,7 +39,7 @@ namespace ShepherdPOS.Api.Entities
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
 
-      
+
         public List<SaleProduct>? SaleProducts { get; set; }
 
         public List<PosCartTransaction>? PosCartTransactions { get; set; }

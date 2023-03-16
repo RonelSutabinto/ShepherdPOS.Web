@@ -1,0 +1,13 @@
+-Oz
+-s EXPORT_ES6=1
+-v
+-s DISABLE_EXCEPTION_CATCHING=0
+-DDISABLE_PERFTRACING_LISTEN_PORTS=1
+-DLINK_ICALLS=1
+-DCORE_BINDINGS
+-DGEN_PINVOKE=1
+-emit-llvm
+"-I/Users/ronelsutabinto/Desktop/Source Code Capstone/FinalProject/ShepherdPOS/ShepherdPOS.Web/obj/Release/net7.0/wasm/for-publish"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/7.0.2/runtimes/browser-wasm/native/include/mono-2.0"
+"-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/7.0.2/runtimes/browser-wasm/native/include/wasm"
+-g

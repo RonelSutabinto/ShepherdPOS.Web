@@ -1,4 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿
+//==============================================================================================================================
+//Creates SaleProduct Entity Data Model for the ShepherdPO database ============================================================
+//===Implementing Entity Framework linkhttps://www.entityframeworktutorial.net/entity-relationships.aspx========================
+//==============================================================================================================================
+
+using Duende.IdentityServer.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShepherdPOS.Api.Entities
@@ -7,13 +15,13 @@ namespace ShepherdPOS.Api.Entities
     {
         public int Id { get; set; }
 
-        [Reuired]
         public int SaleId { get; set; }
 
+        [Required(ErrorMessage = "Required date and time.")]
+        [DataType(DataType.DateTime)]
         public DateTime DateTime { get; set; }
 
-        [Reuired]
-        public string Barcode { get; set; } 
+        public string Barcode { get; set; } = string.Empty;
 
         public string ProductName { get; set; } = string.Empty;
 

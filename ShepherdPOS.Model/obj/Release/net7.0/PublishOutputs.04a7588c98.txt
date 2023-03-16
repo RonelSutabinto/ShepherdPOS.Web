@@ -1,0 +1,3 @@
+/Users/ronelsutabinto/Desktop/Source Code Capstone/FinalProject/Publish/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/Source Code Capstone/FinalProject/Publish/ShepherdPOS.Model.deps.json
+/Users/ronelsutabinto/Desktop/Source Code Capstone/FinalProject/Publish/ShepherdPOS.Model.pdb
