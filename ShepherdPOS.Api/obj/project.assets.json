@@ -5276,11 +5276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
       "projectName": "ShepherdPOS.Api",
-      "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
+      "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/ShepherdPOS.Api.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Api/obj/",
+      "outputPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -5295,11 +5295,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Model/ShepherdPOS.Model.csproj": {
-              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Model/ShepherdPOS.Model.csproj"
+            "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj": {
+              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj"
             },
-            "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
-              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/FinalProject/ShepherdPOS/ShepherdPOS.Web/ShepherdPOS.Web.csproj"
+            "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj": {
+              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj"
             }
           }
         }

@@ -203,15 +203,15 @@
       "mscorlib.dll": "sha256-3H8zsATEgIcRSRoZhWYtgfKT5VniJvhcYxLruf8koAY=",
       "netstandard.dll": "sha256-bbx+pnJNmXZyPqAgESJnWLJsbfuAl0UflLCdl9slPYE=",
       "System.Private.CoreLib.dll": "sha256-pUYF+nr8SzfBMCLc3FM2i\/YivXJlzztdLin+aUsoqP0=",
-      "ShepherdPOS.Model.dll": "sha256-nuHQA8A2JH9LGbsIaPRxS9n2vtqjk1JNomD\/gO5Xku0=",
-      "ShepherdPOS.Web.dll": "sha256-j659AZ6juR5j5ODZCShASk1V7+KgBVZRROJLLc2Wx2k="
+      "ShepherdPOS.Model.dll": "sha256-EdP9X2pqTo9oGpV05ZNmYNd4dcDfW6+O8IGBlE\/X6b0=",
+      "ShepherdPOS.Web.dll": "sha256-JNGK9irlhZMsPjfJM8dKXKjSHuPiAnxXsBIdPm2l\/PM="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "ShepherdPOS.Model.pdb": "sha256-4UVkLjyoVUKyNVU6bJeAb+mNP3Cs6yEPATCUXzIhPWI=",
-      "ShepherdPOS.Web.pdb": "sha256-7WizBQi8sdOOL23+tFGqFp1GNkwO27Rns62u\/oi29ls="
+      "ShepherdPOS.Model.pdb": "sha256-fokQFNMqTBgn30+jzJeI2QXZh\/A+ClA+nPQNGnuYffM=",
+      "ShepherdPOS.Web.pdb": "sha256-uHlHENc+LvVJmV+YejsgeSU724MfZ6hccaDg50Cnsbc="
     },
     "runtime": {
       "dotnet.7.0.4.9h66m8xu50.js": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",

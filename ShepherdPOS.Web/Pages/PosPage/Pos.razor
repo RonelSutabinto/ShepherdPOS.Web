@@ -93,29 +93,8 @@
         //OnProductSelect = HandleProductSelect;
     }
 
-    private async Task HandleProductSelect(SelectProductView product)
-    {
-        CartQuantityRequestDto CartQuantityRequestDto = new()
-        {
-            ProductId = product.Id,
-            CartQuantity = cart.ProductQuantity(product.Barcode)
-        };
-
-        var response = await Http.PostAsJsonAsync<CartQuantityRequestDto>("api/checkstocksale/request", CartQuantityRequestDto);
-        var canBook = await response.Content.ReadFromJsonAsync<bool>();
-
-        if (canBook)
-            cart.AppendToCart(product);
-        else
-            await JsRuntime.InvokeVoidAsync("alert", "Unable to add to cart, insufficient stock.");
-    }
-
-    private void HandleRemoveProduct(SelectProductView product)
-    {
-        cart.DeleteFromCart(product);
-    }
-
-    private async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto)
+    //==================================
+     private async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto)
     {
         StartPosDto StartPosDto = new() { Cart = cart, Payment = AppendPaymentDto };
         await Http.PostAsJsonAsync<StartPosDto>("api/Sale", StartPosDto);
@@ -138,4 +117,29 @@
         await OnProductSelect.InvokeAsync(product);
 
     }
+
+    //==============================================
+    private async Task HandleProductSelect(SelectProductView product)
+    {
+        CartQuantityRequestDto CartQuantityRequestDto = new()
+        {
+            ProductId = product.Id,
+            CartQuantity = cart.ProductQuantity(product.Barcode)
+        };
+
+        var response = await Http.PostAsJsonAsync<CartQuantityRequestDto>("api/checkstocksale/request", CartQuantityRequestDto);
+        var canBook = await response.Content.ReadFromJsonAsync<bool>();
+
+        if (canBook)
+            cart.AppendToCart(product);
+        else
+            await JsRuntime.InvokeVoidAsync("alert", "Unable to add to cart, insufficient stock.");
+    }
+
+    private void HandleRemoveProduct(SelectProductView product)
+    {
+        cart.DeleteFromCart(product);
+    }
+
+   
 }
