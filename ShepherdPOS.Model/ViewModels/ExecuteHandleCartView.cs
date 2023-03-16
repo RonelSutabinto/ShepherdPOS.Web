@@ -19,11 +19,38 @@ namespace ShepherdPOS.Models.Classes
             DiscountAmount = 0;
         }
 
+        public decimal DiscountAmount { get; set; }
+        public decimal DiscounttoCart { get { return TotalAmount * DiscountAmount / 100; } }
+
         public int Quantity { get { return Rows.Sum(_row => _row.Quantity); } }
         public decimal TaxAmount { get { return Rows.Sum(_row => _row.TaxAmount); } }
         public decimal TotalAmount { get { return Rows.Sum(_row => _row.TotalAmount); } }
-        public decimal DiscountAmount { get; set; }
-        public decimal DiscounttoCart { get { return TotalAmount * DiscountAmount / 100; } }
+        public void AppendToCart(SelectProductView product)
+        {
+            var inRow = GetPosCartRow(product.Barcode);
+            if (inRow != null)
+                inRow.Quantity = inRow.Quantity + 1;
+            else
+                Rows.Add(new CartRow { Product = product, Quantity = 1 });
+
+        }
+
+        public int ProductQuantity(string productCode)
+        {
+            var inRow = GetPosCartRow(productCode);
+            return inRow == null ? 0 : GetPosCartRow(productCode).Quantity;
+        }
+
+        private CartRow? GetPosCartRow(string productCode) {return Rows.FirstOrDefault(_row => _row.Product.Barcode == productCode);}
+
+        public void DeleteFromCart(SelectProductView product)
+        {
+            var inRow = GetPosCartRow(product.Barcode);
+            if (inRow!.Quantity == 1)
+                Rows.Remove(GetPosCartRow(product.Barcode));
+            else
+                inRow.Quantity = GetPosCartRow(product.Barcode).Quantity - 1;
+        }
 
         public decimal AmountDue
         {
@@ -44,38 +71,6 @@ namespace ShepherdPOS.Models.Classes
 
             }
         }
-
-        public void AppendToCart(SelectProductView product)
-        {
-            var existingRow = GetCartRow(product.Barcode);
-            if (existingRow != null)
-                existingRow.Quantity++;
-            else
-                Rows.Add(new CartRow { Product = product, Quantity = 1 });
-
-        }
-
-        public int ProductQuantity(string productCode)
-        {
-            var existingRow = GetCartRow(productCode);
-            return existingRow == null ? 0 : existingRow.Quantity;
-        }
-
-        private CartRow? GetCartRow(string productCode)
-        {
-            return Rows.FirstOrDefault(_row => _row.Product.Barcode == productCode);
-        }
-
-        public void DeleteFromCart(SelectProductView product)
-        {
-            var existingRow = GetCartRow(product.Barcode);
-            if (existingRow!.Quantity == 1)
-                Rows.Remove(existingRow);
-            else
-                existingRow.Quantity--;
-        }
-
-
 
     }
 
