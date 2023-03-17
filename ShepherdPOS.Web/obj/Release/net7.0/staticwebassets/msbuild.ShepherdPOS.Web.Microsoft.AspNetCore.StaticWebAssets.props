@@ -377,7 +377,7 @@
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Alternative</AssetRole>
-      <RelatedAsset>/Users/ronelsutabinto/Desktop/Source Code Capstone/FinalProject/ShepherdPOS/ShepherdPOS.Web/bin/Release/net7.0/wwwroot/_framework/blazor.webassembly.js</RelatedAsset>
+      <RelatedAsset>/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/bin/Release/net7.0/wwwroot/_framework/blazor.webassembly.js</RelatedAsset>
       <AssetTraitName>Content-Encoding</AssetTraitName>
       <AssetTraitValue>gzip</AssetTraitValue>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
