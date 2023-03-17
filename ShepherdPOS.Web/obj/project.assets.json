@@ -2152,11 +2152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+      "projectUniqueName": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
       "projectName": "ShepherdPOS.Web",
-      "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
+      "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/ShepherdPOS.Web.csproj",
       "packagesPath": "/Users/ronelsutabinto/.nuget/packages/",
-      "outputPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/obj/",
+      "outputPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ronelsutabinto/.nuget/NuGet/NuGet.Config"
@@ -2171,8 +2171,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj": {
-              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj"
+            "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj": {
+              "projectPath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj"
             }
           }
         }

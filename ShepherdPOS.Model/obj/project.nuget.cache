@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yiTt70Ovfm8taJzWUxQ2JHHy0SnhNJM7wrtlZV2luayGybbQL4kYe96iP2C1POjqoUIlz85COhiENxrj89bezw==",
+  "dgSpecHash": "TklIrryKkehRbC7ry82nZOHNBxin/a8d2I75nE+10ZuR3EzWw5xPCLVVYRmtqoIz9cWO3VauTvIMoIF80hhLMQ==",
   "success": true,
-  "projectFilePath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj",
+  "projectFilePath": "/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/ShepherdPOS.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

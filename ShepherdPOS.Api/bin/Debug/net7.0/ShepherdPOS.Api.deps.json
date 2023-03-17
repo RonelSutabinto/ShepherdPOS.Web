@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "shepherdPOS.API/1.0.0": {
+      "ShepherdPOS.Api/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
@@ -21,7 +21,7 @@
           "ShepherdPOS.Web": "1.0.0"
         },
         "runtime": {
-          "shepherdPOS.API.dll": {}
+          "ShepherdPOS.Api.dll": {}
         }
       },
       "AutoMapper/11.0.1": {
@@ -1085,7 +1085,7 @@
     }
   },
   "libraries": {
-    "shepherdPOS.API/1.0.0": {
+    "ShepherdPOS.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

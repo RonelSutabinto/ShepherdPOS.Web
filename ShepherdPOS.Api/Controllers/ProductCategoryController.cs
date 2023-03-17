@@ -33,6 +33,7 @@ namespace ShepherdPOS.Api.Controllers
             DBmapper = mapper;
             Applogger = logger;
         }
+        
 
         [HttpGet]
         public async Task<IEnumerable<ProductGroupView>> GetAll()
@@ -40,7 +41,12 @@ namespace ShepherdPOS.Api.Controllers
 
             try
             {
-                var result = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.CategoryName).ToArrayAsync();
+                var result = await DBContext.ProductCategories.ProjectTo<ProductGroupView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.CategoryName)
+                    .Select(category => new ProductGroupView
+                    {
+                        Id = category.Id,
+                        CategoryName = category.CategoryName
+                    }).ToArrayAsync();
                 return result;
             }
             catch (Exception)
@@ -65,13 +71,15 @@ namespace ShepherdPOS.Api.Controllers
             }
         }
 
+     
         [HttpGet("selecteditemlist")]
         public async Task<IEnumerable<SelectedItemValueDto>> selecteditemlist()
         {
 
             try
             {
-                var result = await DBContext.ProductCategories.ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
+                var result = await DBContext.ProductCategories
+                    .ProjectTo<SelectedItemValueDto>(DBmapper.ConfigurationProvider).ToArrayAsync();
                 return result;
             }
             catch (Exception)
@@ -80,7 +88,6 @@ namespace ShepherdPOS.Api.Controllers
             }
 
         }
-
 
     }
 }

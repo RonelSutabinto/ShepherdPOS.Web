@@ -1,14 +1,15 @@
 ﻿@*========================================================================================================================================
-===The idea of this code was applied NavigationManager that the URL is inserted into the browser's navigation history=================
-=======================================================================================================================================
-==For more details, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.===================================
-======================================================================================================================================*@
+    ===The idea of this code was applied NavigationManager that the URL is inserted into the browser's navigation history=================
+    =======================================================================================================================================
+    ==For more details, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.===================================
+    ======================================================================================================================================*@
 
 
-@page "/product/create"
+@page "/product/AddProduct"
 @page "/product/edit/{Id:int}"
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
+
 
 @if (Id == 0)
 {
@@ -16,119 +17,137 @@
 }
 else
 {
-    <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Edit Product</MudText>
+    <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Edit Product </MudText>
 }
 <MudText Color="Color.Surface" Class="mb-4">Create, update and delete products </MudText>
 
-<MudGrid>
+@if (Categories != null && product != null)
+{
+    <MudGrid>
 
-    <MudCard>
-        <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
+        <MudCard>
+            <EditForm Model="@product" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
 
-            <MudCardContent>
+                <MudCardContent>
 
-                <label for="ProductCategoryId" class="form-label">Category</label>
-                <InputSelect id="ProductCategoryId" @bind-Value="product.ProductCategoryId" class="form-control">
-                    @foreach (var category in productCategories!)
-                    {
-                        <option value="@category.Value">@category.Text</option>
-                    }
-                </InputSelect>
+                    <MudTextField @bind-Value="product.Barcode"
+                                  For="@(() => product.Barcode)"
+                                  Immediate="true"
+                                  Label="Barcode" />
 
-                <MudTextField @bind-Value="product.Barcode"
-                              For="@(() => product.Barcode)"
-                              Immediate="true"
-                              Label="Barcode" />
+                    <label for="ProductCategoryId" class="form-label mt-4">Category</label>
+                    <InputSelect id="ProductCategoryId" @bind-Value="product.ProductCategoryId" class="form-control mb-4">
+                        @foreach (var category in Categories!)
+                        {
+                            <option value="@category.Value">@category.Text</option>
+                        }
+                    </InputSelect>
 
-                <MudTextField @bind-Value="product.ProductName"
-                              For="@(() => product.ProductName)"
-                              Immediate="true"
-                              Label="Product Name" />
-
-
-
-            </MudCardContent>
-
-            <MudCardContent>
-                <MudTextField @bind-Value="product!.Description"
-                              For="@(() => product!.Description)"
-                              Immediate="true"
-                              Label="Product Description" />
-
-            </MudCardContent>
+                    <MudTextField @bind-Value="product.ProductName"
+                                  For="@(() => product.ProductName)"
+                                  Immediate="true"
+                                  Label="Product Name" />
 
 
-            <MudCardContent>
-                <MudTd DataLabel="Price">
-                    <MudForm Model="@product">
-                        <MudNumericField Label="Sale Price"
-                                         @bind-Value="product.SalePrice"
-                                         For="(() => product.SalePrice)" />
-                    </MudForm>
-                </MudTd>
-                <MudTd DataLabel="Tax">
-                    <MudForm Model="@product">
-                        <MudNumericField Label="Tax Amount"
-                                         @bind-Value="product.TaxAmount"
-                                         For="(() => product.TaxAmount)" />
-                    </MudForm>
-                </MudTd>
 
-                <MudTd DataLabel="Minimum">
-                    <MudForm Model="@product">
-                        <MudNumericField Label="Minimum Stock Value"
-                                         @bind-Value="product.MinimumStock"
-                                         For="(() => product.MinimumStock)" />
-                    </MudForm>
-                </MudTd>
+                </MudCardContent>
 
-            </MudCardContent>
+                <MudCardContent>
+                    <MudTextField @bind-Value="product!.Description"
+                                  For="@(() => product!.Description)"
+                                  Immediate="true"
+                                  Label="Product Description" />
+
+                </MudCardContent>
 
 
-            <MudCardActions>
-                <button type="submit" class="btn btn-success">Save Record</button>
+                <MudCardContent>
+                    <MudTd DataLabel="Price">
+                        <MudForm Model="@product">
+                            <MudNumericField Label="Sale Price"
+                                             @bind-Value="product.SalePrice"
+                                             For="(() => product.SalePrice)" />
+                        </MudForm>
+                    </MudTd>
+                    <MudTd DataLabel="Tax">
+                        <MudForm Model="@product">
+                            <MudNumericField Label="Tax Amount"
+                                             @bind-Value="product.TaxAmount"
+                                             For="(() => product.TaxAmount)" />
+                        </MudForm>
+                    </MudTd>
 
-                <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="m-4" Color="Color.Default">Back</MudButton>
+                    <MudTd DataLabel="Minimum">
+                        <MudForm Model="@product">
+                            <MudNumericField Label="Minimum Stock Value"
+                                             @bind-Value="product.MinimumStock"
+                                             For="(() => product.MinimumStock)" />
+                        </MudForm>
+                    </MudTd>
 
-            </MudCardActions>
+                </MudCardContent>
+
+                <MudCardActions>
+                    <button type="submit" class="btn btn-success">Save Record</button>
+
+                    <MudButton @onclick="Back" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowLeft" class="m-4" Color="Color.Default">Back</MudButton>
+
+                </MudCardActions>
 
 
-        </EditForm>
+            </EditForm>
 
-    </MudCard>
+        </MudCard>
 
-</MudGrid>
+    </MudGrid>
+
+}
+else
+{
+    <ErrorMessage />
+}
+
 
 @code {
     [Parameter] public int Id { get; set; }
+    [Parameter] public ProductGroupView[]? catergories { get; set; }
 
-    SelectedItemValueDto[]? productCategories = null;
+    SelectedItemValueDto[]? Categories = null;
     UpdateProductDto? product = null;
 
     protected override async Task OnInitializedAsync()
     {
-        productCategories = await Http.GetFromJsonAsync<SelectedItemValueDto[]>("api/productcategory/selecteditemlist");
+        Categories = await Http.GetFromJsonAsync<SelectedItemValueDto[]>("api/productcategory/selecteditemlist");
 
         if (Id == 0)
-            product = new UpdateProductDto { ProductCategoryId = productCategories!.First().Value };
+        {
+            product = new UpdateProductDto() { ProductCategoryId = Categories!.First().Value };
+        }
         else
+        {
             product = await Http.GetFromJsonAsync<UpdateProductDto>($"api/product/getproductforupdate/{Id}");
+        }
+
     }
 
     private async Task HandleValidSubmit()
     {
         if (Id == 0)
+        {
             await Http.PostAsJsonAsync<UpdateProductDto>("api/product", product!);
+        }
         else
+        {
             await Http.PutAsJsonAsync<UpdateProductDto>("api/product", product!);
+        }
+
 
         NavigationManager.NavigateTo("product");
     }
 
-    private void Back() =>
-        NavigationManager.NavigateTo("product");
+    private void Back() => NavigationManager.NavigateTo("product");
 
 
 

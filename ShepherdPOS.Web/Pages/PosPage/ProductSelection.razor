@@ -1,43 +1,77 @@
-﻿@*==============================================================================================================
-===The concept for the code of thumbnail table display that used html and IEnumerable Linq database==============
-===context products records query comes from the notion of asp.net core Blazor of add to cart pos================
-===For more details, try this linkhttps://www.youtube.com/watch?v=sHuuo9L3e5c.===============================
-==============================================================================================================*@
+﻿@*===========================================================================================================================
+===The intent of several portions of this code, such as the HTML and thumbnail table display, is unclear.====================
+===This Video instructional contains multiple Linq database table queries.===================================================
+===For more details, try this linkhttps://www.youtube.com/watch?v=sHuuo9L3e5c.===============================================
+=============================================================================================================================*@
+@inject IJSRuntime JsRuntime
 
 <div class="row justify-content-end">
     <div class="col-8 mb-3  ">
-        <input type="text" class="form-control" placeholder="Search by Product Name or Barcode" @bind:event="oninput">
+        <input type="text" class="form-control" placeholder="Search by Product Name or Barcode" @bind="searchString" @onkeyup="SelectProductByNameOrByBarcode">
     </div>
 </div>
 <div class="card" style="height: 700px; overflow-y: scroll;">
     <div class="card-body">
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var product in Products)
+
+            @if (filteredProducts == null)
             {
-                <div class="col">
+                @foreach (var product in Products)
+                {
+                    <div class="col">
 
-                    <div class="card">
-                        <img class="img-thumbnail" src="@product.ImageURL">
-                        <div class="card-body">
+                        <div class="card">
+                            <img class="img-thumbnail" src="@product.ImageURL">
+                            <div class="card-body">
 
-                            <MudText Typo="Typo.subtitle1" Class="card-title">
-                                @product.ProductName
-                            </MudText>
+                                <MudText Typo="Typo.subtitle1" Class="card-title">
+                                    @product.ProductName
+                                </MudText>
 
-                            <p class="card-text">
-                                <b>@product.SalePrice.ToString("C")</b>
-                            </p>
-                            <div>
-                                <button type="button" @onclick="() => SelectProduct(product)" class="btn btn-link">
-                                    Add Item
-                                </button>
+                                <p class="card-text">
+                                    <b>@product.SalePrice.ToString("C")</b>
+                                </p>
+                                <div>
+                                    <button type="button" @onclick="() => SelectProduct(product)" class="btn btn-link">
+                                        Add Item
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                }
             }
+            else
+            {
+                @foreach (var product in filteredProducts)
+                {
+                    <div class="col">
+
+                        <div class="card">
+                            <img class="img-thumbnail" src="@product.ImageURL">
+                            <div class="card-body">
+
+                                <MudText Typo="Typo.subtitle1" Class="card-title">
+                                    @product.ProductName
+                                </MudText>
+
+                                <p class="card-text">
+                                    <b>@product.SalePrice.ToString("C")</b>
+                                </p>
+                                <div>
+                                    <button type="button" @onclick="() => SelectProduct(product)" class="btn btn-link">
+                                        Add Item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+            }
+
         </div>
     </div>
 </div>
@@ -48,9 +82,23 @@
     SelectProductView[]? filteredProducts = null;
     [Parameter] public EventCallback<SelectProductView> OnProductSelect { get; set; }
 
-    private void SelectProductByNameOrByBarcode(string filterName)
+    string searchString = string.Empty;
+
+    private void SelectProductByNameOrByBarcode()
     {
-        filteredProducts = Products!.Where(p => p.ProductName.Contains(filterName)).ToArray();
+        try
+        {
+            var result = Products.Where(s => s.ProductName.IndexOf(searchString, StringComparison.OrdinalIgnoreCase) != -1  ||
+                                        s.Barcode.IndexOf(searchString, StringComparison.OrdinalIgnoreCase) != -1 ).DefaultIfEmpty().ToArray();
+
+            if (result != null)
+                filteredProducts = result;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+
     }
 
     private async Task SelectProduct(SelectProductView product)
@@ -58,4 +106,6 @@
         await OnProductSelect.InvokeAsync(product);
 
     }
+
+
 }

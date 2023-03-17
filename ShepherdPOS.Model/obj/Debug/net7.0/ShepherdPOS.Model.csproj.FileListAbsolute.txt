@@ -34,3 +34,15 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Model.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.pdb
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Model.deps.json
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/bin/Debug/net7.0/ShepherdPOS.Model.pdb
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.csproj.AssemblyReference.cache
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.AssemblyInfoInputs.cache
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.AssemblyInfo.cs
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.csproj.CoreCompileInputs.cache
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/refint/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ShepherdPOS.Model.pdb
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Model/obj/Debug/net7.0/ref/ShepherdPOS.Model.dll

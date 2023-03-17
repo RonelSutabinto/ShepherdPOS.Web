@@ -19,11 +19,9 @@
         <MudText Color="Color.Surface" Class="mb-4 ">Real time POS System </MudText>
     </div>
     <div class="col-md-3 text-end g-1 justify-content-end">
-        <MudText Typo="Typo.h3" Color="Color.Warning" Class="mt-4 mb-0">23.45</MudText>
+        <MudText Typo="Typo.h3" Color="Color.Warning" Class="mt-4 mb-0">@string.Format("{0:N2}", cart.AmountDue)</MudText>
     </div>
 </div>
-
-
 
 
 <MudGrid>
@@ -88,9 +86,7 @@
     protected override async Task OnInitializedAsync()
     {
         allProducts = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
-
         Products = allProducts;
-        //OnProductSelect = HandleProductSelect;
     }
 
     //==================================

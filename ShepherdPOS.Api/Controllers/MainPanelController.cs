@@ -52,7 +52,7 @@ namespace ShepherdPOS.Api.Controllers
                 throw;
             }
 
-            
+
 
 
         }

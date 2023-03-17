@@ -51,7 +51,7 @@ namespace ShepherdPOS.Api.Controllers
         {
             try
             {
-                return await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.ProductName)
+                return await DBContext.Products.ProjectTo<SelectProductView>(DBmapper.ConfigurationProvider).OrderBy(pc => pc.Barcode)
                 .Select(product => new SelectProductView
                 {
                     Id = product.Id,

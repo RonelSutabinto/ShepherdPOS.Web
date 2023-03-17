@@ -1,9 +1,9 @@
 ﻿@*=====================================================================================================================================
-===The idea behind this code is applied to the looping through view model elements that are done in ASP.Net Core Razor Pages.==========
-=======================================================================================================================================
-==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
-==For NavigationManager, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.==============================
-======================================================================================================================================*@
+    ===The idea behind this code is applied to the looping through view model elements that are done in ASP.Net Core Razor Pages.==========
+    =======================================================================================================================================
+    ==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
+    ==For NavigationManager, try this linkhttps://blazor-university.com/routing/navigating-our-app-via-code/.==============================
+    ======================================================================================================================================*@
 
 @page "/product"
 @inject HttpClient Http
@@ -14,10 +14,12 @@
 <MudText Typo="Typo.h5" Color="Color.Primary" Class="mt-4 mb-2">Product Records</MudText>
 <MudText Color="Color.Surface" Class="mb-4">Create, update and delete products </MudText>
 
-<MudGrid>
-    <MudItem xs="12" sm="6" md="3">
-        <MudButton @onclick="Create" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowDownward" class="btn btn-success" Color="Color.Primary">Add New Product</MudButton>
-    </MudItem>
+@*@if (categories != null && products != null)
+{*@
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="3">
+            <MudButton @onclick="Create" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.ArrowDownward" class="btn btn-success" Color="Color.Primary">Add New Product</MudButton>
+        </MudItem>
 
         <table class="table">
             <thead>
@@ -51,17 +53,24 @@
         </table>
 
 
-</MudGrid>
+    </MudGrid>
+
+@*}
+else
+{
+    <ErrorMessage />
+}*@
 
 @code {
 
     private SelectProductView[]? products;
+    private ProductGroupView[]? categories;
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            await Get();
+            await GetAll();
         }
         catch (AccessTokenNotAvailableException exception)
         {
@@ -69,14 +78,11 @@
         }
     }
 
-    private async Task Get() =>
-        products = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
+    private async Task GetAll() => products = await Http.GetFromJsonAsync<SelectProductView[]>("api/product");
 
-    private void Create() =>
-        NavigationManager.NavigateTo("product/create");
+    private void Create() => NavigationManager.NavigateTo("product/AddProduct");
 
-    private void Edit(int id) =>
-        NavigationManager.NavigateTo($"product/edit/{id}");
+    private void Edit(int id) => NavigationManager.NavigateTo($"product/edit/{id}");
 
     private async Task Delete(int id, string name)
     {
@@ -84,7 +90,7 @@
         if (confirmed)
         {
             await Http.DeleteAsync($"api/product/{id}");
-            await Get();
+            await GetAll();
         }
     }
 }
