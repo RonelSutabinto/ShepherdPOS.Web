@@ -1,6 +1,7 @@
 # ShepherdPOS.Web
 
-
+ Course: DGL-309 - Capstone Project
+ 
  This project is a web application for a point-of-sale system that was developed using the Asp.net Core framework. 
  It features a Mudblazor UI component as well as a SQL Server database.
  
