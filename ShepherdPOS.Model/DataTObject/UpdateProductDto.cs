@@ -43,7 +43,8 @@ namespace ShepherdPOS.Models.DataTObject
             set
             {
                 tprice = value;
-                if (Id == 0) TaxAmount = tprice * (decimal)0.25;
+                if (Id == 0)
+                    TaxAmount = tprice * (decimal)0.25;
             }
         }
 

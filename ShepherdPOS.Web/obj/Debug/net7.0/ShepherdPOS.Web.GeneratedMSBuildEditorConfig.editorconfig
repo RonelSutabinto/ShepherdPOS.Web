@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zUGFnZS9FeGVjdXRlUGF5bWVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/Pages/PosPage/ExecutePaymentBtn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zUGFnZS9FeGVjdXRlUGF5bWVudEJ0bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/Pages/PosPage/Pos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zUGFnZS9Qb3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -67,10 +71,6 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/Pages/PosPage/ExecutePaymentBtn.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zUGFnZS9FeGVjdXRlUGF5bWVudEJ0bi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-xt2p7bbjps
 
 [/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/Pages/PosPage/ProductSelection.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zUGFnZS9Qcm9kdWN0U2VsZWN0aW9uLnJhem9y

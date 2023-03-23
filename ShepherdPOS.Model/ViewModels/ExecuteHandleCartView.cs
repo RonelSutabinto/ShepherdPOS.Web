@@ -38,7 +38,12 @@ namespace ShepherdPOS.Models.Classes
         public int ProductQuantity(string productCode)
         {
             var inRow = GetPosCartRow(productCode);
-            return inRow == null ? 0 : GetPosCartRow(productCode).Quantity;
+            int resultQty = 0;
+            
+            if (inRow != null )
+               resultQty =  GetPosCartRow(productCode).Quantity; 
+            
+            return resultQty;
         }
 
         private CartRow? GetPosCartRow(string productCode) {return Rows.FirstOrDefault(_row => _row.Product.Barcode == productCode);}
