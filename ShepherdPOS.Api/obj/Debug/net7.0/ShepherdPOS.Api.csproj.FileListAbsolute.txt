@@ -236,6 +236,7 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.pdb
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ShepherdPOS.Api.genruntimeconfig.cache
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Api/obj/Debug/net7.0/ref/ShepherdPOS.Api.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/ShepherdPOS.Web.staticwebassets.runtime.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/appsettings.Development.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/appsettings.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/BlazorDebugProxy/BrowserDebugHost.dll
@@ -246,7 +247,6 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/BlazorDebugProxy/Microsoft.CodeAnalysis.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/BlazorDebugProxy/Newtonsoft.Json.dll
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/ShepherdPOS.Web.staticwebassets.runtime.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/ShepherdPOS.Api.staticwebassets.runtime.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/ShepherdPOS.Api
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Api/bin/Debug/net7.0/ShepherdPOS.Api.deps.json

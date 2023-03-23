@@ -1,14 +1,15 @@
 ﻿@*=====================================================================================================================================
-===The idea behind this code is applied to the looping through view model elements that are done in ASP.Net Core Razor Pages.==========
-=======================================================================================================================================
-==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
-======================================================================================================================================*@
+    ===The idea behind this code is applied to the looping through view model elements that are done in ASP.Net Core Razor Pages.==========
+    =======================================================================================================================================
+    ==For more details, try this linkhttps://www.aspsnippets.com/Articles/ASPNet-Core-Razor-Pages-Looping-through-Model-Items.aspx.========
+    ======================================================================================================================================*@
 
 @if (Cart != null)
 {
     <div class="row">
         <div class="col-12 mb-3">
-            <input type="text" class="form-control" placeholder="Barcode or QR-code scan here" @bind:event="oninput">
+            <input type="text" class="form-control" placeholder="Barcode or QR-code scan here" @bind="ScanBarcode" @onkeyup="ScanProductItem">
+            @*<input type="text" class="form-control" placeholder="Search by Product Name or Barcode" @bind="searchString" @onkeyup="SelectProductByNameOrByBarcode">*@
         </div>
     </div>
     <div class="row mb-4">
@@ -102,12 +103,36 @@
     [Parameter] public ExecuteHandleCartView Cart { get; set; }
     [Parameter] public EventCallback<SelectProductView> OnRemoveProduct { get; set; }
     [Parameter] public EventCallback<AppendPaymentDto> OnAddPayment { get; set; }
+    [Parameter] public EventCallback<SelectProductView> OnProductScan { get; set; }
+    [Parameter] public SelectProductView[]? Products { get; set; }
 
-    public void HandleApplyDiscount(decimal discountAmount) =>
-        Cart.DiscountAmount = discountAmount;
+    SelectProductView? ScanProducts = null;
 
-    public async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto) =>
-        await OnAddPayment.InvokeAsync(AppendPaymentDto);
+    string ScanBarcode = string.Empty;
+   
+    public void HandleApplyDiscount(decimal discountAmount) => Cart.DiscountAmount = discountAmount;
+
+    public async Task HandleAddPayment(AppendPaymentDto AppendPaymentDto) => await OnAddPayment.InvokeAsync(AppendPaymentDto);
 
 
+    private void ScanProductItem()
+    {
+
+        var result = Products!.Where(p => p.Barcode == ScanBarcode).FirstOrDefault();
+
+        if (result != null)
+        {
+            ScanProducts = result;
+            SelectProduct(ScanProducts);
+        }
+
+    }
+
+    private async Task SelectProduct(SelectProductView product)
+    {
+        await OnProductScan.InvokeAsync(product);
+
+    }
+
+    
 }

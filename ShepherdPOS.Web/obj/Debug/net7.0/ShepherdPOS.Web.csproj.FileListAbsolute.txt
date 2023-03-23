@@ -2569,6 +2569,7 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/refint/ShepherdPOS.Web.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/ShepherdPOS.Web.pdb
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/ref/ShepherdPOS.Web.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/Blazored.Modal.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/dotnet.7.0.4.9h66m8xu50.js
@@ -2611,6 +2612,10 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/mscorlib.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/MudBlazor.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/netstandard.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.pdb
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.dll
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.pdb
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.AppContext.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Buffers.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Collections.Concurrent.dll
@@ -2801,9 +2806,12 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Serialization.Json.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.ComponentModel.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Win32.Primitives.dll.gz
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Extensions.dll.gz
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.pdb.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Serialization.Formatters.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.IO.Pipes.dll.gz
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.pdb.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Net.HttpListener.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/Blazored.Modal.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Text.Encodings.Web.dll.gz
@@ -2883,6 +2891,7 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Globalization.Extensions.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Security.Cryptography.Csp.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Forms.dll.gz
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Runtime.Serialization.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Collections.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.IO.Compression.Brotli.dll.gz
@@ -2977,15 +2986,6 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Xml.Serialization.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/System.Reflection.Emit.Lightweight.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/icudt_CJK.dat.gz
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.dll
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.pdb
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.dll
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.pdb
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.dll.gz
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Model.pdb.gz
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.pdb.gz
-/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/wwwroot/_framework/ShepherdPOS.Web.dll.gz
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/ShepherdPOS.Web.staticwebassets.runtime.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/ShepherdPOS.Web.dll
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/bin/Debug/net7.0/ShepherdPOS.Web.pdb
@@ -3416,6 +3416,7 @@
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/staticwebassets.pack.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/staticwebassets.build.json
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/staticwebassets.development.json
+/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/scopedcss/Pages/PosPage/ExecutePaymentBtn.razor.rz.scp.css
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/scopedcss/Pages/PosPage/ProductSelection.razor.rz.scp.css
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Debug/net7.0/scopedcss/Shared/NavMenu.razor.rz.scp.css

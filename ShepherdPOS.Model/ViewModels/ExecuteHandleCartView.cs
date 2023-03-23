@@ -58,13 +58,13 @@ namespace ShepherdPOS.Models.Classes
             {
                 if (DiscountAmount == 0)
                 {
-                    PostTAmnt = TotalAmount;
-                    return TotalAmount;
+                    PostTAmnt = TotalAmount + TaxAmount;
+                    return PostTAmnt;
                 }
 
                 else
                 {
-                    PostTAmnt = TotalAmount - TotalAmount * (DiscountAmount / 100);
+                    PostTAmnt = TotalAmount -( TotalAmount * (DiscountAmount / 100)+ TaxAmount);
                     return PostTAmnt;
                 }
 

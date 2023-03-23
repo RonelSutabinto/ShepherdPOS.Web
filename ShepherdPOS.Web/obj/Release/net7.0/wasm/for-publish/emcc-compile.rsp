@@ -7,7 +7,7 @@
 -DCORE_BINDINGS
 -DGEN_PINVOKE=1
 -emit-llvm
-"-I/Users/ronelsutabinto/Desktop/SourceCode/REPO/RepoGithub/ShepherdPOS.Web/ShepherdPOS.Web/obj/Release/net7.0/wasm/for-publish"
+"-I/Users/ronelsutabinto/Desktop/SourceCode/REPO/ShepherdPOS.Web/ShepherdPOS.Web/obj/Release/net7.0/wasm/for-publish"
 "-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/7.0.4/runtimes/browser-wasm/native/include/mono-2.0"
 "-I/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/7.0.4/runtimes/browser-wasm/native/include/wasm"
 -g

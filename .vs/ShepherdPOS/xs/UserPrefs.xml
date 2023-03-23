@@ -1,23 +1,34 @@
 ﻿<Properties StartupConfiguration="{5E267B76-9D24-4743-9E10-4776E9DA4C3D}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShepherdPOS.Web/Pages/PosPage/CartItemListPage.razor">
+    <Files>
+      <File FileName="ShepherdPOS.Web/Pages/PosPage/ProductSelection.razor" />
+      <File FileName="ShepherdPOS.Web/Pages/PosPage/CartItemListPage.razor" Line="131" Column="21" />
+      <File FileName="ShepherdPOS.Model/ViewModels/ExecuteHandleCartView.cs" />
+      <File FileName="ShepherdPOS.Api/Controllers/SaleTransactionController.cs" />
+      <File FileName="ShepherdPOS.Api/Controllers/ProductController.cs" />
+      <File FileName="ShepherdPOS.Model/ViewModels/ProductStockView.cs" />
+      <File FileName="ShepherdPOS.Api/Controllers/ProductCategoryController.cs" />
+      <File FileName="ShepherdPOS.Model/ViewModels/SaleTransactionType.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShepherdPOS" expanded="True">
-            <Node name="NuGet.Config files" expanded="True" />
-            <Node name="ShepherdPOS.Api" expanded="True">
-              <Node name="Entities" expanded="True" />
+            <Node name="ShepherdPOS.Web" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="PosPage" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ShepherdPOS.Api PreferredExecutionTarget="/Applications/Firefox.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>
